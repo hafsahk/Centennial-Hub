@@ -1,0 +1,144 @@
+﻿/*body {
+background-image:url(../images/centennial.jpeg);
+background-size:contain;
+    background-repeat:no-repeat;
+}*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.2em;
+    width:100%;
+    border:1px black;
+    margin:0;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+nav {
+    background-color:  #d4df38;
+    padding: 0;
+    height:140px;
+    border-bottom: 2px solid gray;
+    width:100%;
+    border:1px black;
+}
+    nav ul {
+        font-family: 'Open Sans', sans-serif;
+        text-align: right;
+        font-weight: bold;
+        overflow: auto;
+        margin-right: 6%;
+        color: white;
+        margin-left: 45%;
+        width: 40%;
+    }
+        nav ul li {
+            padding: 15px;
+            display: inline-block;
+            margin-right: 2.5%;
+            text-align: center;
+}
+
+    nav ul li a {
+                font-family: Calibri;
+                font-size: 16px;
+                color: darkblue;
+                text-decoration: none;
+                text-align: center;
+                text-decoration:underline;
+                font-weight:600;
+          
+ }
+
+     nav ul li a:hover {
+                    text-decoration: none;
+                    color: darkblue;
+ }
+
+.active, .active:hover {
+    color: darkblue;
+    font-weight: 800;
+}
+
+    .active a:hover {
+        cursor: default;
+        color: darkblue;
+}
+nav  #logo{
+      margin-left:18%;   
+      position:absolute;
+  }
+nav h2{
+    font-size:32px;
+    margin-left: 20.8%;
+    color:#484747;
+}
+.content{
+    width:100px;
+    border: 1px ;
+    border-radius:5px 5px 5px 5px;
+    float:left;
+    margin-top:8px;
+    margin-bottom: 8px;
+    min-height:400px;
+    background-color:antiquewhite;
+}
+.options {
+width:100%;
+margin:0px 0px 10px;
+padding:0px;
+height:40px;
+}
+.navigation_Option1{
+    border-left:0px;
+    border-radius:5px 0 0 5px;
+}
+.navigationItem {
+float:left;
+border-right: 1px solid;
+border-left: 1px solid;
+height:40px;
+}
+.options ul {    height: 43px;
+}
+.options ul li{
+    float:left;
+    /*display:block;*/
+    display:inline-block;
+    list-style:none;
+    border-right:1px solid;
+    border-left: 1px solid;
+    margin-left : 50%;
+}
+.options ul li.navigation_Option1:hover{
+    border-radius:5px 0 0 5px;
+}
+.options ul li a
+{
+    font-size: 14px;
+    font-weight:bold;
+    line-height:40px;
+    padding:8px 20px;
+}
+.options ul li:hover{
+    border-right: 1px solid;
+}
+.footer{
+    height:40px;
+    border-radius:5px 5px 5px 5px;
+    text-align:center;
+}
+.footer h2{
+    font-size:14px;
+    color:darkblue;
+    font-family:'Lucida Calligraphy';
+    text-align:center;
+}
+.clear {
+clear:both;
+}
+
+

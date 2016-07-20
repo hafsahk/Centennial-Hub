@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="pageTitle" runat="server"></asp:ContentPlaceHolder>
+    </title>
+    <link href="Style/design.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server"> 
+            </asp:ContentPlaceHolder>
+</head>
+    <body>
+       <form id="form1" runat="server">        
+        <div class =" wrapper">
+    <!-- Nav Bar starts here -->
+    <nav>
+         <img id ="logo" src="images/CentennialCollege_Logo.png" />
+        <ul class="menucontent">
+                <li class ="active"><a href="Default.aspx">Home</a></li>
+                 <li><a href="Login.aspx">Login</a></li>
+                 <li><a href="Contact.aspx">Contact us</a></li>
+                 <li><a href="Aboutus.aspx">About us</a></li>
+            </ul>
+        <br />
+        <h2>
+            Centennial Hub
+        </h2>
+        </nav>
+
+        <div class="clear"></div>
+        <div>
+        <asp:ContentPlaceHolder id="content" runat="server">
+
+        </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear"></div>
+        <div class="footer" >
+            <h2>Copyright @ Team2 2016</h2>
+        </div>
+            </div>
+            </form>
+    </body>
+</html>
