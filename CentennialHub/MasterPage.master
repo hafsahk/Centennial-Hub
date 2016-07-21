@@ -28,18 +28,15 @@
             Centennial Hub
         </h2>
         </nav>
-
-        <div class="clear"></div>
         <div>
         <asp:ContentPlaceHolder id="content" runat="server">
 
         </asp:ContentPlaceHolder>
         </div>
-        <div class="clear"></div>
-        <div class="footer" >
-            <h2>Copyright @ Team2 2016</h2>
-        </div>
-            </div>
             </form>
+         <footer>
+                <h4>Copyright @ Team2 2016</h4>
+            </footer>
     </body>
+    
 </html>
