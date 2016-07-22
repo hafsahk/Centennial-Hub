@@ -44,7 +44,9 @@
             <td class="auto-style2">
                 <asp:Button ID="Button1" runat="server" Text="Login" />
             </td>
-            <td class="auto-style3">&nbsp;</td>
+            <td class="auto-style3">
+                <asp:Button ID="Button2" runat="server" Text="Button" />
+            </td>
             <td class="auto-style4">&nbsp;</td>
         </tr>
     </table>
