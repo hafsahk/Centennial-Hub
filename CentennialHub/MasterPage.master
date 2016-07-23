@@ -16,14 +16,14 @@
         <div class =" wrapper">
     <!-- Nav Bar starts here -->
     <nav>
-         <img id ="logo" src="images/CentennialCollege_Logo.png" />
+        <img id="logo" src="images/cent-logo.gif" />
+        <!-- <img id ="logo" src="images/CentennialCollege_Logo.png" /> -->
         <ul class="menucontent">
                 <li class ="active"><a href="Default.aspx">Home</a></li>
                  <li><a href="Login.aspx">Login</a></li>
                  <li><a href="Contact.aspx">Contact us</a></li>
                  <li><a href="Aboutus.aspx">About us</a></li>
             </ul>
-        <br />
         <h2>
             Centennial Hub
         </h2>
@@ -33,6 +33,7 @@
 
         </asp:ContentPlaceHolder>
         </div>
+            </div>
             </form>
          <footer>
                 <h4>Copyright @ Team2 2016</h4>
