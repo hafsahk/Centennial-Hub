@@ -6,8 +6,22 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <style type="text/css">
         #wholeForm h2 {
-            border-bottom:3px #cde058 double;
+            width:300px;
             padding:5px;
+        }
+        #wholeForm a{
+            text-decoration:none;
+            color:#2b2929;
+        }
+        #wholeForm a:hover{
+            color:black;
+            text-decoration:underline;
+        }
+        #wholeForm a:active{
+            color:blue;
+        }
+        #title{
+            border-bottom:4px #cde058 double;
         }
         #wholeForm {
             padding: 5px;
@@ -23,7 +37,7 @@
             height: auto;
             width: 99.5%;
             line-height:150%;
-            border-bottom:1px solid green;
+            border-bottom:1px solid #808080;
         }
 
         #txtBoxesPersonalInfo {
@@ -37,7 +51,7 @@
         }
         #wholeForm h4{
             padding:5px;
-            border-bottom: 1px solid green;
+            border-bottom: 1px solid #808080;
         }
         #ContactInfo{
             padding-left: 5px;
@@ -47,7 +61,7 @@
             width: 99.5%;
             line-height:150%;
             padding-bottom:15px;
-            border-bottom:1px solid green;
+            border-bottom:1px solid #808080;
         }
         #txtBoxesContactInfo{
             left: 20%;
@@ -66,7 +80,7 @@
             line-height:150%;
             width: 99.5%;
             padding-bottom:15px;
-            border-bottom:1px solid green;
+            border-bottom:1px solid #808080;
         }
         #txtBoxesProgram{
             left: 20%;
@@ -92,11 +106,11 @@
             line-height:150%;
             width: 99.5%;
             padding-bottom:15px;
-            border-bottom:1px solid green;
+            border-bottom:1px solid #808080;
         }
         #buttonsSaveCancel{
             margin-top:1%;
-            left: 20%;
+            left: 70%;
             position: absolute;
             float: left;
             padding: 2px;
@@ -104,9 +118,34 @@
             height: auto;
             line-height:150%;
         }
+        table{
+            width:100%;
+        }
+        td{
+            margin-left:40%;
+        }  
+        #back{
+            width:30px;
+            height:30px;
+        }
     </style>
     <div id ="wholeForm">
-        <h2> Update Account Details</h2>
+         
+        <div id ="title">
+     <table>
+            <tr>
+                <td>
+                     <h2> Update Account Details</h2>
+                </td>
+                <td>
+                    <a href="home.aspx">Back</a>  &nbsp; &nbsp; | &nbsp; &nbsp;
+                    <a href="">Logout</a>
+                </td>
+            </tr>
+        </table>             
+        </div>
+
+       
          <h4>Edit Personal Info</h4>
         <div id ="personalInfo"> 
         <label>First Name:</label><br />

@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\back.png" />
     <Content Include="images\centennial.jpeg" />
     <Content Include="images\CentennialCollege_Logo.png" />
     <Content Include="MasterPage.master" />
