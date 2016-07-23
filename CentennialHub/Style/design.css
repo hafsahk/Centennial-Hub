@@ -46,7 +46,6 @@ nav {
                 font-family: Calibri;
                 font-size: 16px;
                 color: darkblue;
-                text-decoration: none;
                 text-align: center;
                 text-decoration:underline;
                 font-weight:600;
@@ -88,12 +87,12 @@ nav h2{
 }
 .options {
 width:100%;
-margin:0px 0px 10px;
-padding:0px;
+margin:0 0 10px;
+padding:0;
 height:40px;
 }
 .navigation_Option1{
-    border-left:0px;
+    border-left:0;
     border-radius:5px 0 0 5px;
 }
 .navigationItem {
@@ -133,7 +132,7 @@ height:40px;
 }
 footer h4{
     font-size:14px;
-    color:darkblue;
+    color:gray;
     font-family:'Lucida Calligraphy';
     text-align:center;
 }
