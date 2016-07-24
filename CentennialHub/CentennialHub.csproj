@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -57,6 +58,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adminHomepage.aspx" />
+    <Content Include="advisorHomepage.aspx" />
     <Content Include="images\back.png" />
     <Content Include="images\cent-logo.gif" />
     <Content Include="images\centennial.jpeg" />
@@ -76,6 +79,7 @@
     <Content Include="Default.aspx" />
     <Content Include="form1.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="studentHomepage.aspx" />
     <Content Include="Style\design.css" />
     <Content Include="UpdateAccountDetails.aspx" />
     <Content Include="Web.config" />
@@ -84,6 +88,20 @@
     <Compile Include="Aboutus.aspx.cs">
       <DependentUpon>Aboutus.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminHomepage.aspx.cs">
+      <DependentUpon>adminHomepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminHomepage.aspx.designer.cs">
+      <DependentUpon>adminHomepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="advisorHomepage.aspx.cs">
+      <DependentUpon>advisorHomepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="advisorHomepage.aspx.designer.cs">
+      <DependentUpon>advisorHomepage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -106,6 +124,13 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="studentHomepage.aspx.cs">
+      <DependentUpon>studentHomepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="studentHomepage.aspx.designer.cs">
+      <DependentUpon>studentHomepage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UpdateAccountDetails.aspx.cs">
       <DependentUpon>UpdateAccountDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
