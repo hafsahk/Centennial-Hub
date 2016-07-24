@@ -60,6 +60,8 @@
   <ItemGroup>
     <Content Include="adminHomepage.aspx" />
     <Content Include="advisorHomepage.aspx" />
+    <Content Include="createAdvisorID.aspx" />
+    <Content Include="createStudentID.aspx" />
     <Content Include="images\back.png" />
     <Content Include="images\cent-logo.gif" />
     <Content Include="images\centennial.jpeg" />
@@ -106,6 +108,20 @@
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="createAdvisorID.aspx.cs">
+      <DependentUpon>createAdvisorID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="createAdvisorID.aspx.designer.cs">
+      <DependentUpon>createAdvisorID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="createStudentID.aspx.cs">
+      <DependentUpon>createStudentID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="createStudentID.aspx.designer.cs">
+      <DependentUpon>createStudentID.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

@@ -10,3 +10,9 @@ C:\Users\hello12\Desktop\Centennial-Hub\CentennialHub\bin\CentennialHub.pdb
 C:\Users\hello12\Desktop\Centennial-Hub\CentennialHub\obj\Debug\CentennialHub.csprojResolveAssemblyReference.cache
 C:\Users\hello12\Desktop\Centennial-Hub\CentennialHub\obj\Debug\CentennialHub.dll
 C:\Users\hello12\Desktop\Centennial-Hub\CentennialHub\obj\Debug\CentennialHub.pdb
+C:\Users\hfshm\Desktop\Centennial-Hub-master\Centennial-Hub\CentennialHub\bin\CentennialHub.dll.config
+C:\Users\hfshm\Desktop\Centennial-Hub-master\Centennial-Hub\CentennialHub\bin\CentennialHub.dll
+C:\Users\hfshm\Desktop\Centennial-Hub-master\Centennial-Hub\CentennialHub\bin\CentennialHub.pdb
+C:\Users\hfshm\Desktop\Centennial-Hub-master\Centennial-Hub\CentennialHub\obj\Debug\CentennialHub.csprojResolveAssemblyReference.cache
+C:\Users\hfshm\Desktop\Centennial-Hub-master\Centennial-Hub\CentennialHub\obj\Debug\CentennialHub.dll
+C:\Users\hfshm\Desktop\Centennial-Hub-master\Centennial-Hub\CentennialHub\obj\Debug\CentennialHub.pdb
