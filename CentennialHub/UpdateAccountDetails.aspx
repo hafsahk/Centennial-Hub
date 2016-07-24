@@ -30,9 +30,16 @@
        
         </div>
         <div id ="txtBoxesPersonalInfo">
+<<<<<<< HEAD
         <asp:TextBox ID="fname" Width="240px" runat="server"></asp:TextBox>        <asp:TextBox ID="lname" Width="240px" runat="server"></asp:TextBox>        <asp:TextBox ID="address" Width="240px" runat="server"></asp:TextBox>        <asp:TextBox ID="gender" Width="240px" runat="server"></asp:TextBox> <br />
         <asp:CheckBox ID="Domestic"  runat="server" Text="Domestic" /> &nbsp;&nbsp;&nbsp;
         <asp:CheckBox ID="International"  runat="server" Text="International"/>
+=======
+        <input name="fname" size="30" type="text" value=""/><br />
+        <input name="lname" size="30" type="text" value=""/><br />
+        <input name="DOB" size="30" type="text" value="" placeholder="dd/mm/yyyy" /><br />
+        <asp:DropDownList ID="gender" runat="server" Height="20px" Width="90px"></asp:DropDownList>
+>>>>>>> origin/master
         </div>  
             <br /><br /><br /><br />
         <br /><br />
@@ -44,8 +51,15 @@
         <label>Secondary Email</label><br /> 
         </div>
         <div id ="txtBoxesContactInfo">
+<<<<<<< HEAD
         <asp:TextBox ID="contact" Width="240px" runat="server"></asp:TextBox>        <asp:TextBox ID="emergencyContact" Width="240px" runat="server"></asp:TextBox>
         <asp:TextBox ID="pEmail" Width="240px" placeholder="abc@my.centennial.ca"  runat="server"></asp:TextBox>        <asp:TextBox ID="sEmail" Width="240px"  placeholder="abc@hotmail.com "  runat="server"></asp:TextBox>
+=======
+        <input name="contact" size="30" type="text" value=""/><br />
+        <input name="emergencyContact" size="30" type="text" value=""/><br />
+        <input name="pEmail" size="30" type="text" value="" placeholder="abc@my.centennial.ca" /><br />
+        <input name="sEmail" size="30" type="text" value="" placeholder="abc@hotmail.com " /><br />
+>>>>>>> origin/master
         </div>
              <br /><br /><br /><br />
         <br />
@@ -55,7 +69,12 @@
         <label>Semester</label><br />
         </div>
         <div id="txtBoxesProgram">
+<<<<<<< HEAD
         <asp:TextBox ID="program" Width="240px" runat="server"></asp:TextBox>        <asp:TextBox ID="semester" Width="240px" runat="server"></asp:TextBox>
+=======
+        <input name="program" size="30" type="text" value=""/><br />
+        <input name="semester" size="30" type="text" value=""/><br />
+>>>>>>> origin/master
         </div> 
          <br />
         <br />
