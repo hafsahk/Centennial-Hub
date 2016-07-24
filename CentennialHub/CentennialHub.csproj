@@ -60,6 +60,7 @@
   <ItemGroup>
     <Content Include="adminHomepage.aspx" />
     <Content Include="advisorHomepage.aspx" />
+    <Content Include="advisorPasswordReset.aspx" />
     <Content Include="createAdvisorID.aspx" />
     <Content Include="createStudentID.aspx" />
     <Content Include="images\back.png" />
@@ -104,6 +105,13 @@
     </Compile>
     <Compile Include="advisorHomepage.aspx.designer.cs">
       <DependentUpon>advisorHomepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="advisorPasswordReset.aspx.cs">
+      <DependentUpon>advisorPasswordReset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="advisorPasswordReset.aspx.designer.cs">
+      <DependentUpon>advisorPasswordReset.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

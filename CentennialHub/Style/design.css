@@ -3,7 +3,6 @@ background-image:url(../images/centennial.jpeg);
 background-size:contain;
     background-repeat:no-repeat;
 }*/
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
@@ -129,16 +128,18 @@ height:40px;
 .options ul li:hover{
     border-right: 1px solid;
 }
-.footer{
+footer{
     height:40px;
-    border-radius:5px 5px 5px 5px;
+    /*border-radius:5px 5px 5px 5px;*/
     text-align:center;
+    background: #474748;
 }
 footer h4{
     font-size:14px;
-    color:gray;
-    font-family:'Lucida Calligraphy';
-    text-align:center;
+    color:white;
+    font-family:'Lucida Calligraphy';    
+    padding-top:10px;
+    /*text-align:center;*/
 }
 .clear {
 clear:both;
@@ -311,8 +312,8 @@ clear:both;
             text-align:right;
         }
             #sideNotes{
-                top:45%;
-                left: 50%;
+                top:32%;
+                left: 49%;
                 position: absolute;
                 float: left;
                 padding: 2px;

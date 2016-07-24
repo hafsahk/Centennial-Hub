@@ -32,7 +32,10 @@
         </div>
 
         <div id ="txtBoxesPersonalInfo">
-        <input name="fname" size="30" type="text" value=""/><br />        <input name="lname" size="30" type="text" value=""/><br />        <input name="DOB" size="30" type="text" value="" placeholder="dd/mm/yyyy" /><br />        <asp:DropDownList ID="gender" runat="server" Height="20px" Width="90px"></asp:DropDownList>
+        <input name="fname" size="30" type="text" value=""/><br />
+        <input name="lname" size="30" type="text" value=""/><br />
+        <input name="DOB" size="30" type="text" value="" placeholder="dd/mm/yyyy" /><br />
+        <asp:DropDownList ID="gender" runat="server" Height="20px" Width="90px"></asp:DropDownList>
         </div>  
             <br /><br /><br /><br />
         <br /><br />
@@ -44,7 +47,9 @@
         <label>Secondary Email</label><br /> 
         </div>
         <div id ="txtBoxesContactInfo">
-        <input name="contact" size="30" type="text" value=""/><br />        <input name="emergencyContact" size="30" type="text" value=""/><br />        <input name="pEmail" size="30" type="text" value="" placeholder="abc@my.centennial.ca" /><br />
+        <input name="contact" size="30" type="text" value=""/><br />
+        <input name="emergencyContact" size="30" type="text" value=""/><br />
+        <input name="pEmail" size="30" type="text" value="" placeholder="abc@my.centennial.ca" /><br />
         <input name="sEmail" size="30" type="text" value="" placeholder="abc@hotmail.com " /><br />
         </div>
              <br /><br /><br /><br />
@@ -55,7 +60,8 @@
         <label>Semester</label><br />
         </div>
         <div id="txtBoxesProgram">
-        <input name="program" size="30" type="text" value=""/><br />        <input name="semester" size="30" type="text" value=""/><br />
+        <input name="program" size="30" type="text" value=""/><br />
+        <input name="semester" size="30" type="text" value=""/><br />
         </div> 
          <br />
         <br />
