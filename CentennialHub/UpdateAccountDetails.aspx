@@ -24,15 +24,15 @@
         <div id ="personalInfo"> 
         <label>First Name:</label><br />
         <label>Last Name:</label><br />
-        <label>DOB:</label><br /> 
+        <label>address:</label><br /> 
         <label>Gender:</label><br />
-        <asp:CheckBox ID="chkCitizen"  runat="server" Text="Citizen" /> &nbsp;&nbsp;&nbsp;
-        <asp:CheckBox ID="ChkPermanentResident"  runat="server" Text="Permanent Resident" />&nbsp;&nbsp;&nbsp;
-        <asp:CheckBox ID="ChkBornInCanada"  runat="server" Text="Born in canada"/>
+        <label>Student Type:</label>
+       
         </div>
-
         <div id ="txtBoxesPersonalInfo">
-        <input name="fname" size="30" type="text" value=""/><br />        <input name="lname" size="30" type="text" value=""/><br />        <input name="DOB" size="30" type="text" value="" placeholder="dd/mm/yyyy" /><br />        <asp:DropDownList ID="gender" runat="server" Height="20px" Width="90px"></asp:DropDownList>
+        <asp:TextBox ID="fname" Width="240px" runat="server"></asp:TextBox>        <asp:TextBox ID="lname" Width="240px" runat="server"></asp:TextBox>        <asp:TextBox ID="address" Width="240px" runat="server"></asp:TextBox>        <asp:TextBox ID="gender" Width="240px" runat="server"></asp:TextBox> <br />
+        <asp:CheckBox ID="Domestic"  runat="server" Text="Domestic" /> &nbsp;&nbsp;&nbsp;
+        <asp:CheckBox ID="International"  runat="server" Text="International"/>
         </div>  
             <br /><br /><br /><br />
         <br /><br />
@@ -44,8 +44,8 @@
         <label>Secondary Email</label><br /> 
         </div>
         <div id ="txtBoxesContactInfo">
-        <input name="contact" size="30" type="text" value=""/><br />        <input name="emergencyContact" size="30" type="text" value=""/><br />        <input name="pEmail" size="30" type="text" value="" placeholder="abc@my.centennial.ca" /><br />
-        <input name="sEmail" size="30" type="text" value="" placeholder="abc@hotmail.com " /><br />
+        <asp:TextBox ID="contact" Width="240px" runat="server"></asp:TextBox>        <asp:TextBox ID="emergencyContact" Width="240px" runat="server"></asp:TextBox>
+        <asp:TextBox ID="pEmail" Width="240px" placeholder="abc@my.centennial.ca"  runat="server"></asp:TextBox>        <asp:TextBox ID="sEmail" Width="240px"  placeholder="abc@hotmail.com "  runat="server"></asp:TextBox>
         </div>
              <br /><br /><br /><br />
         <br />
@@ -55,7 +55,7 @@
         <label>Semester</label><br />
         </div>
         <div id="txtBoxesProgram">
-        <input name="program" size="30" type="text" value=""/><br />        <input name="semester" size="30" type="text" value=""/><br />
+        <asp:TextBox ID="program" Width="240px" runat="server"></asp:TextBox>        <asp:TextBox ID="semester" Width="240px" runat="server"></asp:TextBox>
         </div> 
          <br />
         <br />
@@ -64,10 +64,16 @@
         <div id ="passwordChange">
             <p><a href="PasswordReset.aspx">Change Password</a></p>
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
         <div id ="buttonsSaveCancel">
-            <asp:Button ID="SaveButton" runat="server" Text="Save changes" Width="103px" Height="35px" /> &nbsp; &nbsp; 
-            <asp:Button ID="CancelButton" runat="server" Text="Cancel" Height="35px" Width="106px" />
+            <asp:Button ID="SaveButton" runat="server" Text="Save changes" Width="99px" Height="30px" /> &nbsp; &nbsp; 
+            <asp:Button ID="CancelButton" runat="server" Text="Cancel" Height="30px" Width= "99px" />
         </div>
         </div>
-    
+    <br />
+    <br />
+    <br />
 </asp:Content>
