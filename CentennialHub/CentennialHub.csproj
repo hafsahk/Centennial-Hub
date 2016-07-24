@@ -68,7 +68,7 @@
     <Content Include="images\centennial.jpeg" />
     <Content Include="images\CentennialCollege_Logo.png" />
     <Content Include="MasterPage.master" />
-    <Content Include="PasswordReset.aspx" />
+    <Content Include="StudentPasswordReset.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -84,7 +84,7 @@
     <Content Include="Login.aspx" />
     <Content Include="studentHomepage.aspx" />
     <Content Include="Style\design.css" />
-    <Content Include="UpdateAccountDetails.aspx" />
+    <Content Include="StudentUpdateAccountDetails.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -155,19 +155,19 @@
     <Compile Include="studentHomepage.aspx.designer.cs">
       <DependentUpon>studentHomepage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UpdateAccountDetails.aspx.cs">
-      <DependentUpon>UpdateAccountDetails.aspx</DependentUpon>
+    <Compile Include="StudentUpdateAccountDetails.aspx.cs">
+      <DependentUpon>StudentUpdateAccountDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UpdateAccountDetails.aspx.designer.cs">
-      <DependentUpon>UpdateAccountDetails.aspx</DependentUpon>
+    <Compile Include="StudentUpdateAccountDetails.aspx.designer.cs">
+      <DependentUpon>StudentUpdateAccountDetails.aspx</DependentUpon>
     </Compile>
-    <Compile Include="PasswordReset.aspx.cs">
-      <DependentUpon>PasswordReset.aspx</DependentUpon>
+    <Compile Include="StudentPasswordReset.aspx.cs">
+      <DependentUpon>StudentPasswordReset.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="PasswordReset.aspx.designer.cs">
-      <DependentUpon>PasswordReset.aspx</DependentUpon>
+    <Compile Include="StudentPasswordReset.aspx.designer.cs">
+      <DependentUpon>StudentPasswordReset.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>

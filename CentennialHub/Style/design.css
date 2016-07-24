@@ -311,13 +311,13 @@ clear:both;
             text-align:right;
         }
             #sideNotes{
-                top:32%;
+                top:43%;
+                background-color:#f1ffcd;
+                border:3px solid #f1ffcd;
                 left: 49%;
                 position: absolute;
                 float: left;
-                padding: 2px;
                 width: 50%;
-                height: auto;
                 line-height: 150%;
             }
             #sideNotes p{
