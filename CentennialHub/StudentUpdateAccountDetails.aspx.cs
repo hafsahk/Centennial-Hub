@@ -40,7 +40,7 @@ namespace CentennialHub
         {
             conn.Open();
             SqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = "Update Student set  address = @address, gender = @gender, contact = @contact, emergencyContact = @emergencyContact, program = @program, semester = @semester Where (stID = 4001)";
+            cmd.CommandText = "update Student set  address = @address, gender = @gender, contact = @contact, emergencyContact = @emergencyContact, program = @program, semester = @semester Where (stID = 4001)";
             // cmd.CommandType = CommandType.Text;
            // cmd.Parameters.AddWithValue("@stFirstName", fname.Text);
           //  cmd.Parameters.AddWithValue("@stLastName", lname.Text);
@@ -53,12 +53,10 @@ namespace CentennialHub
             cmd.Parameters.AddWithValue("@program", program.Text);
             cmd.Parameters.AddWithValue("@semester", semester.Text);
             cmd.ExecuteNonQuery();
-            string display = "Successfully Update changes!";
-            ClientScript.RegisterStartupScript(this.GetType(), "Successfully Update changes", "alert('" + display + "');", true);
             conn.Close();
          //   fname = @stFirstName, lname = @stLastName,
             // pEmail = @primaryEmail, sEmail = @secondaryEmail,
-
+           
         }
     }
 }
