@@ -19,7 +19,7 @@ namespace CentennialHub
       {
           if (!IsPostBack)
           {
-              lbl1.Text = "Welcome " + Session["stFirstName"];
+              lbl1.Text = "Welcome " + Session["id"];
 
               // Validate initially to force asterisks
               SqlConnection con = new SqlConnection(conn);
@@ -59,7 +59,6 @@ namespace CentennialHub
            // cmd.Parameters.AddWithValue("@secondaryEmail", sEmail.Text);
             cmd.Parameters.AddWithValue("@program", program.Text);
             cmd.Parameters.AddWithValue("@semester", semester.Text);
-            //cmd.Parameters.AddWithValue("@stID", "4001");
             cmd.ExecuteNonQuery();
             con.Close();
            Response.Redirect("studentHomepage.aspx");

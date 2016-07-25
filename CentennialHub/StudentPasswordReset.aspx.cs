@@ -15,7 +15,11 @@ namespace CentennialHub
         public string conn = ConfigurationManager.ConnectionStrings["COMP231-Project"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
-            lbl1.Text = "Welcome " + Session["stFirstName"];
+            if (!IsPostBack)
+            {
+                this.UnobtrusiveValidationMode = System.Web.UI.UnobtrusiveValidationMode.None;
+               // lbl1.Text = "Welcome " + Session["id"];
+            }
         }
 
         protected void SaveButton_Click(object sender, EventArgs e)
@@ -23,19 +27,19 @@ namespace CentennialHub
             SqlConnection con = new SqlConnection(conn);
             con.Open();
             SqlCommand cmd = con.CreateCommand();
-            cmd.CommandText = "update Login set confirmPass = @ password";
-            cmd.Parameters.AddWithValue("@password", confirmPass.Text);
-            cmd.ExecuteNonQuery();
-            con.Close();
-            Response.Redirect("studentHomepage.aspx");
+            //if (confirmPass.Text == newPass.Text)
+            {
+                cmd.CommandText = "update Login set newPass = @password where id = 4001";
+                cmd.Parameters.AddWithValue("@password", newPass.Text);
+                cmd.ExecuteNonQuery();
+                con.Close();
+                Response.Redirect("studentHomepage.aspx");
+            }
         }
 
         protected void CancelButton_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("studentHomepage.aspx");
         }
-
-       
-
     }
 }

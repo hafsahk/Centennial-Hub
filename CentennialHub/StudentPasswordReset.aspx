@@ -35,22 +35,14 @@
         </div>
         <div id="txtBoxesPassword">
             <asp:TextBox ID="currentPass" TextMode="Password" Width="240px" runat="server"></asp:TextBox>
-           <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
-            ControlToValidate="currentPass" 
-            ErrorMessage="Please enter Current password"></asp:RequiredFieldValidator>
 
             <asp:TextBox ID="newPass" TextMode="Password" Width="240px" runat="server"></asp:TextBox>
-              <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
-            ControlToValidate="newPass" 
-            ErrorMessage="Please enter new password"></asp:RequiredFieldValidator>
 
-            <asp:TextBox ID="confirmPass" TextMode="Password" Width="240px" runat="server"></asp:TextBox>
-              <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
-            ControlToValidate="confirmPass" 
-            ErrorMessage="Please enter new password again"></asp:RequiredFieldValidator>
+        <asp:TextBox ID="confirmPass" TextMode="Password" Width="240px" runat="server"></asp:TextBox>
 
         </div>
         <br /> <br /><br /><br /><br />
+        <br />
         <br />
         <div id="sideNotes">
             <p>Password requirements</p>
