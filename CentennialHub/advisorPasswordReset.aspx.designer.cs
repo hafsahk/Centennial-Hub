@@ -10,7 +10,7 @@
 namespace CentennialHub {
     
     
-    public partial class WebForm1 {
+    public partial class StudentPasswordReset {
         
         /// <summary>
         /// SaveButton control.

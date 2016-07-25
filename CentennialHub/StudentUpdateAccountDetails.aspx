@@ -5,13 +5,19 @@
     <link href="Style/design.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
-   
+     <style>
+        #title h5{
+            text-align:right;
+            width:114.7%;
+            }
+    </style>
     <div id ="wholeForm">  
         <div id ="title">
      <table>
             <tr>
                 <td>
-                     <h2> Update Account Details</h2>
+                    <h5><asp:Label ID="lbl1" runat="server"></asp:Label></h5>
+                        <h2> Update Account Details</h2>
                 </td>
                 <td>
                     <a href="form1.aspx">Back</a>  &nbsp; &nbsp; | &nbsp; &nbsp;
@@ -31,10 +37,10 @@
         </div>
         <div id ="txtBoxesPersonalInfo">
 
-        <asp:TextBox ID="fname" Width="240px" runat="server" ReadOnly="True"></asp:TextBox>
-        <asp:TextBox ID="lname" Width="240px" runat="server" ReadOnly="True"></asp:TextBox>
+        <asp:TextBox ID="fname" Width="240px" runat="server" ReadOnly="True" BackColor="#E6E7E8"></asp:TextBox>
+        <asp:TextBox ID="lname" Width="240px" runat="server" ReadOnly="True" BackColor="#E6E7E8"></asp:TextBox>
         <asp:TextBox ID="address" Width="240px" runat="server"></asp:TextBox>
-        <asp:TextBox ID="gender" Width="240px" runat="server" ReadOnly="True"></asp:TextBox> <br />
+        <asp:TextBox ID="gender" Width="240px" runat="server" ReadOnly="True" BackColor="#E6E7E8"></asp:TextBox> <br />
         <asp:CheckBox ID="Domestic"  runat="server" Text="Domestic" /> &nbsp;&nbsp;&nbsp;
         <asp:CheckBox ID="International"  runat="server" Text="International"/>
         </div>  
@@ -51,8 +57,8 @@
 
         <asp:TextBox ID="contact" Width="240px" runat="server"></asp:TextBox>
         <asp:TextBox ID="emergencyContact" Width="240px" runat="server"></asp:TextBox>
-        <asp:TextBox ID="pEmail" Width="240px" placeholder="abc@my.centennial.ca"  runat="server"></asp:TextBox>
-        <asp:TextBox ID="sEmail" Width="240px"  placeholder="abc@hotmail.com "  runat="server"></asp:TextBox>
+        <asp:TextBox ID="pEmail" Width="240px"  runat="server" BackColor="#E6E7E8"></asp:TextBox>
+        <asp:TextBox ID="sEmail" Width="240px"  runat="server"></asp:TextBox>
 
         </div>
              <br /><br /><br /><br />
@@ -64,8 +70,8 @@
         </div>
         <div id="txtBoxesProgram">
 
-        <asp:TextBox ID="program" Width="240px" runat="server" ReadOnly="True"></asp:TextBox>
-        <asp:TextBox ID="semester" Width="240px" runat="server" ReadOnly="True"></asp:TextBox>
+        <asp:TextBox ID="program" Width="240px" runat="server" ReadOnly="True" BackColor="#E6E7E8"></asp:TextBox>
+        <asp:TextBox ID="semester" Width="240px" runat="server" ReadOnly="True" BackColor="#E6E7E8"></asp:TextBox>
 
         </div> 
          <br />
@@ -73,7 +79,7 @@
         <br />
        <h4>Edit Password</h4>
         <div id ="passwordChange">
-            <p><a href="PasswordReset.aspx">Change Password</a></p>
+            <p><a href="StudentPasswordReset.aspx">Change Password</a></p>
         </div>
         <br />
         <br />
@@ -81,7 +87,7 @@
         <br />
         <div id ="buttonsSaveCancel">
             <asp:Button ID="SaveButton" runat="server" Text="Save changes" Width="99px" Height="30px" OnClick="SaveButton_Click" /> &nbsp; &nbsp; 
-            <asp:Button ID="CancelButton" runat="server" Text="Cancel" Height="30px" Width= "99px" />
+            <asp:Button ID="CancelButton" runat="server" Text="Cancel" Height="30px" Width= "99px" OnClick="CancelButton_Click" OnClientClick="return confirm('Are you sure, you want to cancel?');" />
         </div>
         </div>
     <br />

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="StudentPasswordReset.aspx.cs" Inherits="CentennialHub.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="StudentPasswordReset.aspx.cs" Inherits="CentennialHub.StudentPasswordReset" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="pageTitle" runat="server">
 </asp:Content>
@@ -6,11 +6,18 @@
      <link href="Style/design.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
+    <style>
+        #title h5{
+            text-align:right;
+            width:114.7%;
+            }
+    </style>
     <div id="wholeForm">
         <div id="title">
             <table>
                 <tr>
                     <td>
+                        <h5><asp:Label ID="lbl1" runat="server"></asp:Label></h5>
                         <h2>Reset Password</h2>
                     </td>
                     <td><a href="UpdateAccountDetails.aspx">Back</a>  &nbsp; &nbsp; | &nbsp; &nbsp;
@@ -27,9 +34,21 @@
             <br />
         </div>
         <div id="txtBoxesPassword">
-            <input name="currentPass" size="30" type="text" value="" /><br />
-            <input name="newPass" size="30" type="text" value="" /><br />
-            <input name="confirmPass" size="30" type="text" /><br />
+            <asp:TextBox ID="currentPass" TextMode="Password" Width="240px" runat="server"></asp:TextBox>
+           <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+            ControlToValidate="currentPass" 
+            ErrorMessage="Please enter Current password"></asp:RequiredFieldValidator>
+
+            <asp:TextBox ID="newPass" TextMode="Password" Width="240px" runat="server"></asp:TextBox>
+              <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+            ControlToValidate="newPass" 
+            ErrorMessage="Please enter new password"></asp:RequiredFieldValidator>
+
+            <asp:TextBox ID="confirmPass" TextMode="Password" Width="240px" runat="server"></asp:TextBox>
+              <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
+            ControlToValidate="confirmPass" 
+            ErrorMessage="Please enter new password again"></asp:RequiredFieldValidator>
+
         </div>
         <br /> <br /><br /><br /><br />
         <br />
@@ -45,9 +64,9 @@
         <br />
         <br />
         <div id="buttonsSaveCancl">
-            <asp:Button ID="SaveButton" runat="server" Text="Save changes" Width="99px" Height="30px" />
+            <asp:Button ID="SaveButton" runat="server" Text="Save changes" Width="99px" Height="30px" OnClick="SaveButton_Click" />
             &nbsp; &nbsp; 
-            <asp:Button ID="CancelButton" runat="server" Text="Cancel" Height="30px" Width="99px" />
+            <asp:Button ID="CancelButton" runat="server" Text="Cancel" Height="30px" Width="99px" OnClientClick="return confirm('Are you sure, you want to cancel?');" OnClick="CancelButton_Click" />
         </div>
         <br />
         <br />

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="advisorPasswordReset.aspx.cs" Inherits="CentennialHub.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="advisorPasswordReset.aspx.cs" Inherits="CentennialHub.StudentPasswordReset" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="pageTitle" runat="server">
 </asp:Content>

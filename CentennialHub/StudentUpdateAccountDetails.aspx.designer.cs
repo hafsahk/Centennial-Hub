@@ -13,6 +13,15 @@ namespace CentennialHub {
     public partial class UpdateAccountDetails {
         
         /// <summary>
+        /// lbl1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl1;
+        
+        /// <summary>
         /// fname control.
         /// </summary>
         /// <remarks>
