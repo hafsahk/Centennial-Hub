@@ -85,7 +85,9 @@
     <Content Include="studentHomepage.aspx" />
     <Content Include="Style\design.css" />
     <Content Include="StudentUpdateAccountDetails.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aboutus.aspx.cs">
