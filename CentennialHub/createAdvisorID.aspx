@@ -25,70 +25,80 @@
         <tr>
             <td class="auto-style2">Faculty ID</td>
             <td>
-                <asp:TextBox ID="TextBox1" runat="server" Width="330px"></asp:TextBox>
+                <asp:TextBox ID="advid" runat="server" Width="330px"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Enter a new ID" ForeColor="#CC0000"></asp:RequiredFieldValidator>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style2">First Name</td>
             <td>
-                <asp:TextBox ID="TextBox2" runat="server" Width="329px"></asp:TextBox>
+                <asp:TextBox ID="fname" runat="server" Width="329px"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="enter your first name" ForeColor="#CC0000"></asp:RequiredFieldValidator>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style2">Middle Name</td>
             <td>
-                <asp:TextBox ID="TextBox3" runat="server" Width="329px"></asp:TextBox>
+                <asp:TextBox ID="mname" runat="server" Width="329px"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="enter your middle name" ForeColor="#CC0000"></asp:RequiredFieldValidator>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style2">Last Name</td>
             <td>
-                <asp:TextBox ID="TextBox4" runat="server" Width="329px"></asp:TextBox>
+                <asp:TextBox ID="lname" runat="server" Width="329px"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="enter your last name" ForeColor="#CC0000"></asp:RequiredFieldValidator>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style2">Password</td>
             <td>
-                <asp:TextBox ID="TextBox10" runat="server" Width="329px"></asp:TextBox>
+                <asp:TextBox ID="password" runat="server" Width="329px"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="enter a password" ForeColor="#CC0000"></asp:RequiredFieldValidator>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style2">Address</td>
             <td>
-                <asp:TextBox ID="TextBox5" runat="server" Width="329px"></asp:TextBox>
+                <asp:TextBox ID="address" runat="server" Width="329px"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="enter your address" ForeColor="#CC0000"></asp:RequiredFieldValidator>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style2">Email</td>
             <td>
-                <asp:TextBox ID="TextBox6" runat="server" Width="329px"></asp:TextBox>
+                <asp:TextBox ID="email" runat="server" Width="329px"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="enter email" ForeColor="#CC0000"></asp:RequiredFieldValidator>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style2">Contact No.</td>
             <td>
-                <asp:TextBox ID="TextBox7" runat="server" Width="329px"></asp:TextBox>
+                <asp:TextBox ID="contact" runat="server" Width="329px"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="enter your contact number" ForeColor="#CC0000"></asp:RequiredFieldValidator>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style2">Type</td>
             <td>
-                <asp:TextBox ID="TextBox8" runat="server" Width="329px"></asp:TextBox>
+                <asp:TextBox ID="type" runat="server" Width="329px"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ErrorMessage="enter the type of id" ForeColor="#CC0000"></asp:RequiredFieldValidator>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style2">Department</td>
             <td>
-                <asp:TextBox ID="TextBox9" runat="server" Width="330px"></asp:TextBox>
+                <asp:TextBox ID="department" runat="server" Width="330px"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ErrorMessage="enter the department name" ForeColor="#CC0000"></asp:RequiredFieldValidator>
             </td>
             <td>&nbsp;</td>
         </tr>

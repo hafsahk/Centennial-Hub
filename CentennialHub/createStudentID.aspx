@@ -13,82 +13,82 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
-  Create New Student ID<br />
+    Create New Student ID<br />
     <table class="auto-style1">
         <tr>
             <td class="auto-style2">Student ID</td>
             <td>
-                <asp:TextBox ID="TextBox1" runat="server" Width="330px"></asp:TextBox>
+                <asp:TextBox ID="newID" runat="server" Width="330px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style2">First Name</td>
             <td>
-                <asp:TextBox ID="TextBox2" runat="server" Width="330px"></asp:TextBox>
+                <asp:TextBox ID="fname" runat="server" Width="330px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style2">Middle Name</td>
             <td>
-                <asp:TextBox ID="TextBox3" runat="server" Width="330px"></asp:TextBox>
+                <asp:TextBox ID="mname" runat="server" Width="330px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style2">Last Name</td>
             <td>
-                <asp:TextBox ID="TextBox4" runat="server" Width="330px"></asp:TextBox>
+                <asp:TextBox ID="lname" runat="server" Width="330px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style2">Password</td>
             <td>
-                <asp:TextBox ID="TextBox5" runat="server" Width="330px"></asp:TextBox>
+                <asp:TextBox ID="password" runat="server" Width="330px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style2">Address</td>
             <td>
-                <asp:TextBox ID="TextBox6" runat="server" Width="330px"></asp:TextBox>
+                <asp:TextBox ID="address" runat="server" Width="330px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style2">Email</td>
             <td>
-                <asp:TextBox ID="TextBox7" runat="server" Width="330px"></asp:TextBox>
+                <asp:TextBox ID="email" runat="server" Width="330px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style2">Contact No.</td>
             <td>
-                <asp:TextBox ID="TextBox8" runat="server" Width="330px"></asp:TextBox>
+                <asp:TextBox ID="contact" runat="server" Width="330px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style2">Program</td>
             <td>
-                <asp:TextBox ID="TextBox9" runat="server" Width="330px"></asp:TextBox>
+                <asp:TextBox ID="program" runat="server" Width="330px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style2">Semester</td>
             <td>
-                <asp:TextBox ID="TextBox10" runat="server" Width="330px"></asp:TextBox>
+                <asp:TextBox ID="semester" runat="server" Width="330px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style2">Cummulative GPA</td>
             <td>
-                <asp:TextBox ID="TextBox11" runat="server" Width="330px"></asp:TextBox>
+                <asp:TextBox ID="gpa" runat="server" Width="330px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
