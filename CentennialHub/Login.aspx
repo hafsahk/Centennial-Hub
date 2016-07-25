@@ -5,54 +5,55 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
-        .auto-style1 {
-            width: 78%;
+        .auto-style5 {
+            width: 100%;
         }
-        .auto-style2 {
-            width: 128px;
+        .auto-style6 {
+            width: 264px;
         }
-        .auto-style3 {
-            width: 270px;
-        }
-        .auto-style4 {
-            width: 625px;
+        .auto-style7 {
+            width: 359px;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" Runat="Server">
 
-   <table class="auto-style1">
+  
+    <table class="auto-style5">
         <tr>
-            <td class="auto-style2">Login</td>
-            <td class="auto-style3">&nbsp;</td>
-            <td class="auto-style4">&nbsp;</td>
+            <td class="auto-style6">Login</td>
+            <td class="auto-style7">&nbsp;</td>
+            <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style2">User Id</td>
-            <td class="auto-style3">
-                <asp:TextBox ID="txtUserId" runat="server" Width="249px"></asp:TextBox>
+            <td class="auto-style6">User ID</td>
+            <td class="auto-style7">
+                <asp:TextBox ID="txtusername" runat="server" Width="250px"></asp:TextBox>
             </td>
-            <td class="auto-style4">
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please enter your ID" ControlToValidate="txtUserId" ForeColor="#CC0000"></asp:RequiredFieldValidator>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style2">Password</td>
-            <td class="auto-style3">
-                <asp:TextBox ID="txtPassword" runat="server" Width="247px"></asp:TextBox>
-            </td>
-            <td class="auto-style4">
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtPassword" ErrorMessage="Enter your password" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+            <td>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtusername" ErrorMessage="enter your user id" ForeColor="#CC0000"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
-            <td class="auto-style5">
-                <asp:Button ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" />
+            <td class="auto-style6">Password</td>
+            <td class="auto-style7">
+                <asp:TextBox ID="txtpassword" runat="server" Width="250px"></asp:TextBox>
             </td>
+            <td>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtpassword" ErrorMessage="enter your password" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+            </td>
+        </tr>
+        <tr>
             <td class="auto-style6">
-                <asp:Button ID="Button2" runat="server" Text="Cancel" />
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="login" />
             </td>
-            <td class="auto-style7"></td>
+            <td class="auto-style7">
+                <asp:Button ID="Button2" runat="server" Text="cancel" />
+            </td>
+            <td>&nbsp;</td>
         </tr>
+    </table>
+
+  
 </asp:Content>
 

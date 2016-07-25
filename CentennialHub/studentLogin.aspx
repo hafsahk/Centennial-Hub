@@ -37,4 +37,5 @@
             </td>
             <td class="auto-style7"></td>
         </tr>
+        </table>
 </asp:Content>

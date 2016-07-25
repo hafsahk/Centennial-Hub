@@ -22,3 +22,9 @@ C:\Users\Selina\Desktop\Centennial-Hub\CentennialHub\bin\CentennialHub.pdb
 C:\Users\Selina\Desktop\Centennial-Hub\CentennialHub\obj\Debug\CentennialHub.csprojResolveAssemblyReference.cache
 C:\Users\Selina\Desktop\Centennial-Hub\CentennialHub\obj\Debug\CentennialHub.dll
 C:\Users\Selina\Desktop\Centennial-Hub\CentennialHub\obj\Debug\CentennialHub.pdb
+C:\Users\hfshm\Downloads\Centennial-Hub-master\CentennialHub\Centennial-Hub\CentennialHub\bin\CentennialHub.dll.config
+C:\Users\hfshm\Downloads\Centennial-Hub-master\CentennialHub\Centennial-Hub\CentennialHub\bin\CentennialHub.dll
+C:\Users\hfshm\Downloads\Centennial-Hub-master\CentennialHub\Centennial-Hub\CentennialHub\bin\CentennialHub.pdb
+C:\Users\hfshm\Downloads\Centennial-Hub-master\CentennialHub\Centennial-Hub\CentennialHub\obj\Debug\CentennialHub.csprojResolveAssemblyReference.cache
+C:\Users\hfshm\Downloads\Centennial-Hub-master\CentennialHub\Centennial-Hub\CentennialHub\obj\Debug\CentennialHub.dll
+C:\Users\hfshm\Downloads\Centennial-Hub-master\CentennialHub\Centennial-Hub\CentennialHub\obj\Debug\CentennialHub.pdb
