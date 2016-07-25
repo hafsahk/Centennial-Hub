@@ -60,6 +60,7 @@
   <ItemGroup>
     <Content Include="adminHomepage.aspx" />
     <Content Include="advisorHomepage.aspx" />
+    <Content Include="advisorLogin.aspx" />
     <Content Include="advisorPasswordReset.aspx" />
     <Content Include="createAdvisorID.aspx" />
     <Content Include="createStudentID.aspx" />
@@ -68,6 +69,7 @@
     <Content Include="images\centennial.jpeg" />
     <Content Include="images\CentennialCollege_Logo.png" />
     <Content Include="MasterPage.master" />
+    <Content Include="studentLogin.aspx" />
     <Content Include="StudentPasswordReset.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -107,6 +109,13 @@
     </Compile>
     <Compile Include="advisorHomepage.aspx.designer.cs">
       <DependentUpon>advisorHomepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="advisorLogin.aspx.cs">
+      <DependentUpon>advisorLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="advisorLogin.aspx.designer.cs">
+      <DependentUpon>advisorLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="advisorPasswordReset.aspx.cs">
       <DependentUpon>advisorPasswordReset.aspx</DependentUpon>
@@ -156,6 +165,13 @@
     </Compile>
     <Compile Include="studentHomepage.aspx.designer.cs">
       <DependentUpon>studentHomepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="studentLogin.aspx.cs">
+      <DependentUpon>studentLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="studentLogin.aspx.designer.cs">
+      <DependentUpon>studentLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="StudentUpdateAccountDetails.aspx.cs">
       <DependentUpon>StudentUpdateAccountDetails.aspx</DependentUpon>
