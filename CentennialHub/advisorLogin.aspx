@@ -34,6 +34,7 @@
             </td>
             <td class="auto-style6">
                 <asp:Button ID="Button2" runat="server" Text="Cancel" />
+                <asp:Button ID="Button3" runat="server" Text="reset" />
             </td>
             <td class="auto-style7"></td>
         </tr>
