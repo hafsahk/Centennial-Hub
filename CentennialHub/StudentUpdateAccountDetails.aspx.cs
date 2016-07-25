@@ -40,22 +40,19 @@ namespace CentennialHub
         {
             conn.Open();
             SqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = "update Student set  address = @address, gender = @gender, contact = @contact, emergencyContact = @emergencyContact, program = @program, semester = @semester Where (stID = 4001)";
+            cmd.CommandText = "update Student set  address = @address, gender = @gender, contact = @contact, emergencyContact = @emergencyContact, program = @program, semester = @semester Where stID = 4001";
             // cmd.CommandType = CommandType.Text;
-           // cmd.Parameters.AddWithValue("@stFirstName", fname.Text);
-          //  cmd.Parameters.AddWithValue("@stLastName", lname.Text);
             cmd.Parameters.AddWithValue("@address", address.Text);
             cmd.Parameters.AddWithValue("@gender", gender.Text);
             cmd.Parameters.AddWithValue("@contact", contact.Text);
             cmd.Parameters.AddWithValue("@emergencyContact", emergencyContact.Text);
-            //cmd.Parameters.AddWithValue("@primaryEmail", pEmail.Text);
-            //cmd.Parameters.AddWithValue("@secondaryEmail", sEmail.Text);
+           // cmd.Parameters.AddWithValue("@secondaryEmail", sEmail.Text);
             cmd.Parameters.AddWithValue("@program", program.Text);
             cmd.Parameters.AddWithValue("@semester", semester.Text);
+            //cmd.Parameters.AddWithValue("@stID", "4001");
             cmd.ExecuteNonQuery();
             conn.Close();
-         //   fname = @stFirstName, lname = @stLastName,
-            // pEmail = @primaryEmail, sEmail = @secondaryEmail,
+            Response.Redirect("studentHomepage.aspx");
            
         }
     }
