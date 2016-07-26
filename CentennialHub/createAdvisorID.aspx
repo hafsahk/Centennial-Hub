@@ -12,16 +12,16 @@
         }
         .auto-style3 {
             width: 269px;
-            height: 33px;
+            height: 44px;
         }
         .auto-style4 {
-            height: 33px;
+            height: 44px;
         }
         .auto-style5 {
             width: 366px;
         }
         .auto-style6 {
-            height: 33px;
+            height: 44px;
             width: 366px;
         }
     </style>
@@ -32,10 +32,10 @@
         <tr>
             <td class="auto-style2">Faculty ID</td>
             <td class="auto-style5">
-                <asp:TextBox ID="id" runat="server" Width="330px"></asp:TextBox>
+                <asp:TextBox ID="id" runat="server" Width="330px" OnTextChanged="id_TextChanged"></asp:TextBox>
             </td>
             <td>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="advid" runat="server" ErrorMessage="Enter a new ID" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="id" runat="server" ErrorMessage="Enter a new ID" ForeColor="#CC0000"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -53,7 +53,7 @@
                 <asp:TextBox ID="mname" runat="server" Width="329px"></asp:TextBox>
             </td>
             <td>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ControlToValidate="nname" runat="server" ErrorMessage="enter your middle name" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ControlToValidate="mname" runat="server" ErrorMessage="enter your middle name" ForeColor="#CC0000"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -91,7 +91,6 @@
             <td>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator7" ControlToValidate="email" runat="server" ErrorMessage="enter email" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                 <br />
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Enter a valid email id" ForeColor="#CC0000"></asp:RegularExpressionValidator>
             </td>
         </tr>
         <tr>
@@ -109,8 +108,7 @@
                 <asp:TextBox ID="typ" runat="server" Width="329px"></asp:TextBox>
             </td>
             <td>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator9" ControlToValidate="type" runat="server" ErrorMessage="enter the type of id" ForeColor="#CC0000"></asp:RequiredFieldValidator>
-            </td>
+                &nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style2">Department</td>

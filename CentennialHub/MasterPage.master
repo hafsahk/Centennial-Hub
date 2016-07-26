@@ -20,7 +20,7 @@
         <!-- <img id ="logo" src="images/CentennialCollege_Logo.png" /> -->
         <ul class="menucontent">
                 <li class ="active"><a href="Default.aspx">Home</a></li>
-                 <li><a href="Login.aspx">Login</a></li>
+                 <li><a href="Default.aspx">Login</a></li>
                  <li><a href="Contact.aspx">Contact us</a></li>
                  <li><a href="Aboutus.aspx">About us</a></li>
             </ul>
