@@ -32,7 +32,7 @@
         <tr>
             <td class="auto-style2">Faculty ID</td>
             <td class="auto-style5">
-                <asp:TextBox ID="advid" runat="server" Width="330px"></asp:TextBox>
+                <asp:TextBox ID="id" runat="server" Width="330px"></asp:TextBox>
             </td>
             <td>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="advid" runat="server" ErrorMessage="Enter a new ID" ForeColor="#CC0000"></asp:RequiredFieldValidator>
@@ -68,7 +68,7 @@
         <tr>
             <td class="auto-style2">Password</td>
             <td class="auto-style5">
-                <asp:TextBox ID="password" runat="server" Width="329px"></asp:TextBox>
+                <asp:TextBox ID="password" runat="server" Width="329px" TextMode="Password"></asp:TextBox>
             </td>
             <td>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator5" ControlToValidate="password" runat="server" ErrorMessage="enter a password" ForeColor="#CC0000"></asp:RequiredFieldValidator>
@@ -106,7 +106,7 @@
         <tr>
             <td class="auto-style2">Type</td>
             <td class="auto-style5">
-                <asp:TextBox ID="type" runat="server" Width="329px"></asp:TextBox>
+                <asp:TextBox ID="typ" runat="server" Width="329px"></asp:TextBox>
             </td>
             <td>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator9" ControlToValidate="type" runat="server" ErrorMessage="enter the type of id" ForeColor="#CC0000"></asp:RequiredFieldValidator>
@@ -123,7 +123,7 @@
         </tr>
         <tr>
             <td class="auto-style3">
-                <asp:Button ID="Button1" runat="server" Text="Submit" />
+                <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" />
             </td>
             <td class="auto-style6"></td>
             <td class="auto-style4"></td>

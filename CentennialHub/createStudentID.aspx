@@ -79,7 +79,7 @@
         <tr>
             <td class="auto-style2">Password</td>
             <td class="auto-style3">
-                <asp:TextBox ID="password" runat="server" Width="330px"></asp:TextBox>
+                <asp:TextBox ID="password" runat="server" Width="330px" TextMode="Password"></asp:TextBox>
             </td>
             <td>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="enter a password" ForeColor="#CC0000" ControlToValidate="password"></asp:RequiredFieldValidator>

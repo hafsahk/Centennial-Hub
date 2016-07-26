@@ -13,13 +13,13 @@ namespace CentennialHub {
     public partial class createStudentID {
         
         /// <summary>
-        /// advid control.
+        /// id control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox advid;
+        protected global::System.Web.UI.WebControls.TextBox id;
         
         /// <summary>
         /// RequiredFieldValidator1 control.
@@ -166,13 +166,13 @@ namespace CentennialHub {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator8;
         
         /// <summary>
-        /// type control.
+        /// typ control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox type;
+        protected global::System.Web.UI.WebControls.TextBox typ;
         
         /// <summary>
         /// RequiredFieldValidator9 control.
