@@ -108,8 +108,7 @@
                 <asp:TextBox ID="typ" runat="server" Width="329px"></asp:TextBox>
             </td>
             <td>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator9" ControlToValidate="type" runat="server" ErrorMessage="enter the type of id" ForeColor="#CC0000"></asp:RequiredFieldValidator>
-            </td>
+                &nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style2">Department</td>
