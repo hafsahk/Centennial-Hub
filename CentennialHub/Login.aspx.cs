@@ -25,13 +25,6 @@ namespace CentennialHub
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-
-            Response.Redirect("Default.aspx");
-        }
-       
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
             Object obj = null;
             SqlConnection con = new SqlConnection(strConnString);
             con.Open();
