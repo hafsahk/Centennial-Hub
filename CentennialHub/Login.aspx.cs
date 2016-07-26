@@ -23,20 +23,18 @@ namespace CentennialHub
             }
         }
 
-<<<<<<< HEAD
-    protected void Button1_Click(object sender, EventArgs e)
-    {       
- 
-        Response.Redirect("Default.aspx");
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+            Response.Redirect("Default.aspx");
+        }
        
-=======
+
         protected void Button1_Click(object sender, EventArgs e)
         {
             Object obj = null;
             SqlConnection con = new SqlConnection(strConnString);
             con.Open();
-
-
 
             Session["id"] = id.Text;
             str = "select * from Login where id = @id and password = @password";
@@ -53,6 +51,6 @@ namespace CentennialHub
         {
             Response.Redirect("Default.aspx");
         }
->>>>>>> origin/master
+
     }
 }
