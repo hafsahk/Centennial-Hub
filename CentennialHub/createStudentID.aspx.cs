@@ -54,6 +54,7 @@ namespace CentennialHub
             cmd.ExecuteNonQuery();
             conn.Close();
             Response.Write("id has been created");
+         
         }
     }
 }

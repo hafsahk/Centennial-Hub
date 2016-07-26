@@ -11,7 +11,10 @@ namespace CentennialHub
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                this.UnobtrusiveValidationMode = System.Web.UI.UnobtrusiveValidationMode.None;
+            }
         }
     }
 }

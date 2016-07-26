@@ -13,13 +13,13 @@ namespace CentennialHub {
     public partial class studentLogin {
         
         /// <summary>
-        /// txtUserId control.
+        /// id control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUserId;
+        protected global::System.Web.UI.WebControls.TextBox id;
         
         /// <summary>
         /// RequiredFieldValidator1 control.
@@ -31,13 +31,13 @@ namespace CentennialHub {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
         
         /// <summary>
-        /// txtPassword control.
+        /// password control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPassword;
+        protected global::System.Web.UI.WebControls.TextBox password;
         
         /// <summary>
         /// RequiredFieldValidator2 control.
@@ -47,6 +47,15 @@ namespace CentennialHub {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
         /// Button2 control.

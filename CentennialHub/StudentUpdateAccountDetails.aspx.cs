@@ -56,12 +56,12 @@ namespace CentennialHub
             cmd.Parameters.AddWithValue("@gender", gender.Text);
             cmd.Parameters.AddWithValue("@contact", contact.Text);
             cmd.Parameters.AddWithValue("@emergencyContact", emergencyContact.Text);
-           // cmd.Parameters.AddWithValue("@secondaryEmail", sEmail.Text);
             cmd.Parameters.AddWithValue("@program", program.Text);
             cmd.Parameters.AddWithValue("@semester", semester.Text);
             cmd.ExecuteNonQuery();
             con.Close();
-           //Response.Redirect("studentHomepage.aspx");
+            Response.Write("Successfully Updated!");
+           Response.Redirect("studentHomepage.aspx");
         }
 
          protected void CancelButton_Click(object sender, EventArgs e)
