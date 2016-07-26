@@ -39,6 +39,9 @@
             <asp:TextBox ID="newPass" TextMode="Password" Width="240px" runat="server"></asp:TextBox>
 
         <asp:TextBox ID="confirmPass" TextMode="Password" Width="240px" runat="server"></asp:TextBox>
+               <asp:CompareValidator ID="CompareValidator1" runat="server" 
+            ControlToCompare="newPass" ControlToValidate="confirmPass" 
+            ErrorMessage="Password Mismatch"></asp:CompareValidator>  
 
         </div>
         <br /> <br /><br /><br /><br />
@@ -56,7 +59,13 @@
         <br />
         <br />
         <div id="buttonsSaveCancl">
-            <asp:Button ID="SaveButton" runat="server" Text="Save changes" Width="99px" Height="30px" OnClick="SaveButton_Click" />
+
+<script>
+function myFunction() {
+    alert("Password changed successfully!");
+}
+</script>
+            <asp:Button ID="SaveButton" runat="server" Text="Save changes" Width="99px" Height="30px" OnClick="SaveButton_Click" OnClientClick = "myFunction()" />
             &nbsp; &nbsp; 
             <asp:Button ID="CancelButton" runat="server" Text="Cancel" Height="30px" Width="99px" OnClientClick="return confirm('Are you sure, you want to cancel?');" OnClick="CancelButton_Click" />
         </div>

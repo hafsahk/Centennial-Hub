@@ -5,13 +5,22 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
+    <style>
+        h5{
+            width:80%;
+            text-align:right;
+        }
+    </style>
+    <h5>
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+    </h5>
      <ul class="studentmenu">
                  <li><a href="#">Build Student Timetable</a></li>
           <li><a href="#">Edit Student Timetable</a></li>
           <li><a href="#">View Student Record</a></li>
-          <li><a href="#">Update Student Information</a></li>
+          <li><a href="StudentUpdateAccountDetails">Update Student Information</a></li>
           <li><a href="UpdateAccountDetails.aspx">Update Information</a></li>
-           <li><a href="PasswordReset.aspx">Update Password</a></li>
+           <li><a href="StudentPasswordReset.aspx">Update Password</a></li>
            <li><a href="#">Apply for Re-admit</a></li>
             </ul>
 </asp:Content>

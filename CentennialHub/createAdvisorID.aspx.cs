@@ -14,12 +14,12 @@ namespace CentennialHub
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-<<<<<<< HEAD
+
             if (!IsPostBack)
             {
                 this.UnobtrusiveValidationMode = System.Web.UI.UnobtrusiveValidationMode.None;
             }
-=======
+
             this.UnobtrusiveValidationMode = System.Web.UI.UnobtrusiveValidationMode.None;
             if (IsPostBack)
             {
@@ -57,7 +57,7 @@ namespace CentennialHub
             cmd.ExecuteNonQuery();
             conn.Close();
             Response.Write("id has been created");
->>>>>>> origin/master
+
         }
     }
 }
