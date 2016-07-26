@@ -24,7 +24,6 @@ namespace CentennialHub
                 int temp = Convert.ToInt32(cmd.ExecuteScalar().ToString());
                 if (temp == 1) {
                     Response.Write("The id you have entered already exists");
-
                 }
                 conn.Close();
             }
@@ -36,7 +35,7 @@ namespace CentennialHub
             conn.Open();
             String addingData ="Insert into Student(stID,stFirstName,stMiddleName,stLastName,gender,address,primaryEmail,secondaryEmail,contact,emergencyContact,program,semester,password,type) values (@id,@fname,@mname,@lname,@gender,@address,@pemail,@semail,@contact,@econtact,@prog,@sem,@password,@type)";
             SqlCommand cmd = new SqlCommand(addingData, conn);
-            cmd.Parameters.AddWithValue("@stID",sid.Text);
+            cmd.Parameters.AddWithValue("@id",sid.Text);
             cmd.Parameters.AddWithValue("@fname",fname.Text);
             cmd.Parameters.AddWithValue("@mname", mname.Text);
             cmd.Parameters.AddWithValue("@lname", lname.Text);
@@ -48,11 +47,10 @@ namespace CentennialHub
             cmd.Parameters.AddWithValue("@contact", contact.Text);
             cmd.Parameters.AddWithValue("@eContact", eContact.Text);
             
-            cmd.Parameters.AddWithValue("@program", program.Text);
-            cmd.Parameters.AddWithValue("@semester", semester.Text);
+            cmd.Parameters.AddWithValue("@prog", program.Text);
+            cmd.Parameters.AddWithValue("@sem", semester.Text);
             cmd.Parameters.AddWithValue("@password", password.Text);
             cmd.Parameters.AddWithValue("@type", typ.Text);
-
             cmd.ExecuteNonQuery();
             conn.Close();
             Response.Write("id has been created");

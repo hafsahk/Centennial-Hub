@@ -61,7 +61,7 @@ namespace CentennialHub
             cmd.Parameters.AddWithValue("@semester", semester.Text);
             cmd.ExecuteNonQuery();
             con.Close();
-           Response.Redirect("studentHomepage.aspx");
+           //Response.Redirect("studentHomepage.aspx");
         }
 
          protected void CancelButton_Click(object sender, EventArgs e)
