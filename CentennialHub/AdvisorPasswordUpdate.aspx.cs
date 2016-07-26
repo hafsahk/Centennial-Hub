@@ -10,11 +10,11 @@ using System.Web.UI.WebControls;
 
 namespace CentennialHub
 {
-    public partial class StudentPasswordReset : System.Web.UI.Page
+    public partial class AdvisorPasswordUpdate : System.Web.UI.Page
     {
-       public string conn = ConfigurationManager.ConnectionStrings["COMP231-Project"].ConnectionString;
+        public string conn = ConfigurationManager.ConnectionStrings["COMP231-Project"].ConnectionString;
 
-       //string strConnString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+        //string strConnString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
         string str = null;
         SqlCommand com;
         byte up;
@@ -24,21 +24,20 @@ namespace CentennialHub
             if (!IsPostBack)
             {
                 this.UnobtrusiveValidationMode = System.Web.UI.UnobtrusiveValidationMode.None;
-               label1.Text = "Welcome " + Session["id"];
+                lbl1.Text = "Welcome " + Session["id"];
             }
         }
 
         protected void SaveButton_Click(object sender, EventArgs e)
         {
-           
-             SqlConnection con = new SqlConnection(conn);
+            SqlConnection con = new SqlConnection(conn);
             con.Open();
             str = "select * from Login ";
             com = new SqlCommand(str, con);
             SqlDataReader reader = com.ExecuteReader();
             while (reader.Read())
             {
-                if (currentPass.Text == reader["password"].ToString())
+                if (curPass.Text == reader["password"].ToString())
                 {
                     up = 1;
                 }
@@ -48,13 +47,13 @@ namespace CentennialHub
             if (up == 1)
             {
                 con.Open();
-                str = "update login set password = @password where id='" + Session["id"].ToString()+ "'";
+                str = "update login set password = @password where id='" + Session["id"].ToString() + "'";
                 com = new SqlCommand(str, con);
                 com.Parameters.Add(new SqlParameter("@password", SqlDbType.VarChar, 50));
-                com.Parameters["@password"].Value = newPass.Text;
+                com.Parameters["@password"].Value = nPass.Text;
                 com.ExecuteNonQuery();
                 con.Close();
-                Response.Redirect("studentHomepage.aspx");
+                Response.Redirect("advisorHomepage.aspx");
             }
             else
             {
@@ -63,10 +62,9 @@ namespace CentennialHub
             }
 
         }
-
         protected void CancelButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("studentHomepage.aspx");
+            Response.Redirect("advisorHomepage.aspx");
         }
     }
 }

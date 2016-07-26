@@ -10,43 +10,43 @@
 namespace CentennialHub {
     
     
-    public partial class StudentPasswordReset {
+    public partial class AdvisorPasswordUpdate {
         
         /// <summary>
-        /// label1 control.
+        /// lbl1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label label1;
+        protected global::System.Web.UI.WebControls.Label lbl1;
         
         /// <summary>
-        /// currentPass control.
+        /// curPass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox currentPass;
+        protected global::System.Web.UI.WebControls.TextBox curPass;
         
         /// <summary>
-        /// newPass control.
+        /// nPass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox newPass;
+        protected global::System.Web.UI.WebControls.TextBox nPass;
         
         /// <summary>
-        /// confirmPass control.
+        /// conPass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox confirmPass;
+        protected global::System.Web.UI.WebControls.TextBox conPass;
         
         /// <summary>
         /// CompareValidator1 control.
@@ -64,7 +64,7 @@ namespace CentennialHub {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-     //   protected global::System.Web.UI.WebControls.Button SaveButton;
+        protected global::System.Web.UI.WebControls.Button SaveButton;
         
         /// <summary>
         /// CancelButton control.
@@ -73,6 +73,6 @@ namespace CentennialHub {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-       // protected global::System.Web.UI.WebControls.Button CancelButton;
+        protected global::System.Web.UI.WebControls.Button CancelButton;
     }
 }

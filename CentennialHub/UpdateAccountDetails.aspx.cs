@@ -25,7 +25,7 @@ namespace CentennialHub
               SqlConnection con = new SqlConnection(conn);
               string str;
               con.Open();
-              str = "Select stFirstName, stLastName, address, gender, contact, emergencyContact, primaryEmail, secondaryEmail, program, semester from Student where stID=4001";
+              str = "Select stFirstName, stLastName, address, gender, contact, emergencyContact, primaryEmail, secondaryEmail, program, semester from Student where stID='" + Session["id"].ToString() + "'";
             SqlCommand  com = new SqlCommand(str, con);
               SqlDataReader reader = com.ExecuteReader();
               if (reader.Read())

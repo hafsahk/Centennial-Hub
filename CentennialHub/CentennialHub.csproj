@@ -61,7 +61,7 @@
     <Content Include="adminHomepage.aspx" />
     <Content Include="advisorHomepage.aspx" />
     <Content Include="advisorLogin.aspx" />
-    <Content Include="advisorPasswordReset.aspx" />
+    <Content Include="AdvisorPasswordUpdate.aspx" />
     <Content Include="createAdvisorID.aspx" />
     <Content Include="createStudentID.aspx" />
     <Content Include="images\back.png" />
@@ -86,7 +86,7 @@
     <Content Include="Login.aspx" />
     <Content Include="studentHomepage.aspx" />
     <Content Include="Style\design.css" />
-    <Content Include="StudentUpdateAccountDetails.aspx" />
+    <Content Include="UpdateAccountDetails.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -117,12 +117,12 @@
     <Compile Include="advisorLogin.aspx.designer.cs">
       <DependentUpon>advisorLogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="advisorPasswordReset.aspx.cs">
-      <DependentUpon>advisorPasswordReset.aspx</DependentUpon>
+    <Compile Include="AdvisorPasswordUpdate.aspx.cs">
+      <DependentUpon>AdvisorPasswordUpdate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="advisorPasswordReset.aspx.designer.cs">
-      <DependentUpon>advisorPasswordReset.aspx</DependentUpon>
+    <Compile Include="AdvisorPasswordUpdate.aspx.designer.cs">
+      <DependentUpon>AdvisorPasswordUpdate.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -173,12 +173,12 @@
     <Compile Include="studentLogin.aspx.designer.cs">
       <DependentUpon>studentLogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="StudentUpdateAccountDetails.aspx.cs">
-      <DependentUpon>StudentUpdateAccountDetails.aspx</DependentUpon>
+    <Compile Include="UpdateAccountDetails.aspx.cs">
+      <DependentUpon>UpdateAccountDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="StudentUpdateAccountDetails.aspx.designer.cs">
-      <DependentUpon>StudentUpdateAccountDetails.aspx</DependentUpon>
+    <Compile Include="UpdateAccountDetails.aspx.designer.cs">
+      <DependentUpon>UpdateAccountDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="StudentPasswordReset.aspx.cs">
       <DependentUpon>StudentPasswordReset.aspx</DependentUpon>

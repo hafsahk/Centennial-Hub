@@ -17,7 +17,7 @@
     <ul class="studentmenu">
            <li><a href="#">Build Timetable</a></li>
            <li><a href="#">View Student Record</a></li>
-           <li><a href="StudentUpdateAccountDetails.aspx">Update Information</a></li>
+           <li><a href="UpdateAccountDetails.aspx">Update Information</a></li>
            <li><a href="StudentPasswordReset.aspx">Change Password</a> </li>
            <li><a href="#">Drop Courses</a></li>
            <li><a href="#">Apply for Re-admit</a></li>

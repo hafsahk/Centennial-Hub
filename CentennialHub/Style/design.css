@@ -291,14 +291,16 @@ clear:both;
             }
             #txtBoxesPassword {
                margin-top:4%;
-                left: 20%;
+                left: 21%;
                 position: absolute;
                 float: left;
                 padding: 2px;
-                width: 20%;
-                height: auto;
+                width: 24%;
+                height: 122px;
                 line-height: 150%;
-            }
+    top: 317px;
+    right: 719px;
+}
             #buttonsSaveCancl{
             margin-top:1%;
             position: absolute;

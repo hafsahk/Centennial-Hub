@@ -21,7 +21,7 @@ public partial class Login : System.Web.UI.Page
     protected void Button1_Click(object sender, EventArgs e)
     {       
  
-        Response.Redirect("adminHomepage.aspx");
+        Response.Redirect("Default.aspx");
        
     }
 }
