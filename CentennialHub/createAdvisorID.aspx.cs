@@ -59,5 +59,10 @@ namespace CentennialHub
             Response.Write("id has been created");
 
         }
+
+        protected void id_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -68,6 +68,7 @@
     <Content Include="images\cent-logo.gif" />
     <Content Include="images\centennial.jpeg" />
     <Content Include="images\CentennialCollege_Logo.png" />
+    <Content Include="Login.aspx" />
     <Content Include="MasterPage.master" />
     <Content Include="studentLogin.aspx" />
     <Content Include="StudentPasswordReset.aspx" />
@@ -83,7 +84,6 @@
     <Content Include="Contact.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="form1.aspx" />
-    <Content Include="Login.aspx" />
     <Content Include="studentHomepage.aspx" />
     <Content Include="Style\design.css" />
     <Content Include="StudentUpdateAccountDetails.aspx" />
@@ -153,6 +153,9 @@
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage.master.cs">
       <DependentUpon>MasterPage.master</DependentUpon>
