@@ -28,19 +28,15 @@ namespace CentennialHub
            Object obj = null;
             SqlConnection con = new SqlConnection(strConnString);
             con.Open();
-
-
-           // Response.Redirect("studentHomepage.aspx");
-            Session["id"] = id.Text;
-            str = "select * from Login where id = @id and password = @password";
-            com = new SqlCommand(str, con);
-            com.CommandType = CommandType.Text;
-            com.Parameters.AddWithValue("@id", Session["id"]);
-            com.Parameters.AddWithValue("@password", password.Text);
-            obj = com.ExecuteScalar();
-          
-                Response.Redirect("studentHomepage.aspx");
-           
+            
+                Session["id"] = id.Text;
+                str = "select * from Login where id = @id and password = @password";
+                com = new SqlCommand(str, con);
+                com.CommandType = CommandType.Text;
+                com.Parameters.AddWithValue("@id", Session["id"]);
+                com.Parameters.AddWithValue("@password", password.Text);
+                obj = com.ExecuteScalar();
+                Response.Redirect("studentHomepage.aspx");   
         }
     }
 }
