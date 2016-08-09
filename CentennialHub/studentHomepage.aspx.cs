@@ -30,7 +30,7 @@ namespace CentennialHub
                 String program = Convert.ToString(semRdr["program"]);
                 String sem = Convert.ToString(semRdr["semester"]);//convert to integer
 
-                    }
+          }
 
 
         } 
