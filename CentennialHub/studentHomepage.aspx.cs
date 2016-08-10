@@ -12,6 +12,8 @@ namespace CentennialHub
 {
     public partial class studentHomepage : System.Web.UI.Page
     {
+        String program;
+        int sem;
         protected void Page_Load(object sender, EventArgs e)
         {
             
@@ -23,16 +25,27 @@ namespace CentennialHub
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["COMP231-Project"].ConnectionString);
             conn.Open();
             String gettingSemester = "select program,semester from student where stID='" + Session["id"].ToString() + "'";
-            SqlCommand cmd = new SqlCommand(gettingSemester,conn);
+            SqlCommand cmd = new SqlCommand(gettingSemester, conn);
             SqlDataReader semRdr = cmd.ExecuteReader();
 
-            while (semRdr.Read()) {
-                String program = Convert.ToString(semRdr["program"]);
-                String sem = Convert.ToString(semRdr["semester"]);//convert to integer
+            while (semRdr.Read())
+            {
+                program = Convert.ToString(semRdr["program"]);
+                sem = Convert.ToInt16(semRdr["semester"]);//convert to integer
+                conn.Close();
+            }
+        }
+              public void previousSemCourses()
+        {
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["COMP231-Project"].ConnectionString);
+            conn.Open();
+            String gettingcourses = "select coursecode from studentrecord where stID='" + Session["id"].ToString() + "' AND (description='unmet' and semester=1)";
+            SqlCommand cmd = new SqlCommand(gettingcourses, conn);
+            SqlDataReader semRdr = cmd.ExecuteReader();
 
-                    }
+            conn.Close();
+        }
 
 
         } 
     }
-}
