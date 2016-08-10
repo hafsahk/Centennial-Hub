@@ -13,9 +13,12 @@
     </style>
     <h5>
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        
     </h5>
+    <h6> </h6>
+    <asp:LinkButton ID="LinkButton1" runat="server" OnClientClick="GettingStudentData">View/Build Timetable</asp:LinkButton>
     <ul class="studentmenu">
-           <li><a href="#">Build Timetable</a></li>
+        
            <li><a href="#">View Student Record</a></li>
            <li><a href="UpdateAccountDetails.aspx">Update Information</a></li>
            <li><a href="StudentPasswordReset.aspx">Change Password</a> </li>

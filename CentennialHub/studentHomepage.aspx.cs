@@ -13,7 +13,8 @@ namespace CentennialHub
     public partial class studentHomepage : System.Web.UI.Page
     {
         String program;
-        int sem;
+        int currentSem,i;
+        List<String> courses = new List<String>();
         protected void Page_Load(object sender, EventArgs e)
         {
             
@@ -31,18 +32,34 @@ namespace CentennialHub
             while (semRdr.Read())
             {
                 program = Convert.ToString(semRdr["program"]);
-                sem = Convert.ToInt16(semRdr["semester"]);//convert to integer
+                currentSem = Convert.ToInt16(semRdr["semester"]);//convert to integer
+                Console.WriteLine(program);
+                Console.ReadKey();
                 conn.Close();
             }
         }
-              public void previousSemCourses()
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void previousSemCourses()
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["COMP231-Project"].ConnectionString);
             conn.Open();
-            String gettingcourses = "select coursecode from studentrecord where stID='" + Session["id"].ToString() + "' AND (description='unmet' and semester=1)";
-            SqlCommand cmd = new SqlCommand(gettingcourses, conn);
-            SqlDataReader semRdr = cmd.ExecuteReader();
+            for (i=1;i<=currentSem;i++) {
+               
+                String gettingcourses = "select coursecode from studentrecord where stID='" + Session["id"].ToString() + "' AND (description='unmet' and semester=1)";
+                SqlCommand cmd = new SqlCommand(gettingcourses, conn);
+                SqlDataReader courseRdr = cmd.ExecuteReader();
+                while (courseRdr.Read())
+                {
+                    courses.Add(Convert.ToString(courseRdr["coursecode"]));
+                }
 
+               
+            }
             conn.Close();
         }
 
