@@ -33,18 +33,35 @@ namespace CentennialHub
             {
                 program = Convert.ToString(semRdr["program"]);
                 currentSem = Convert.ToInt16(semRdr["semester"]);//convert to integer
-                Console.WriteLine(program);
-                Console.ReadKey();
-                conn.Close();
+     
             }
+            conn.Close();
         }
 
-        protected void LinkButton1_Click(object sender, EventArgs e)
+        //protected void LinkButton1_Click(object sender, EventArgs e)
+        //{
+        //    GettingStudentdata();
+        //    previousSemCourses();
+        //    Response.Write(courses);
+
+        //}
+
+        protected void Button1_Click(object sender, EventArgs e)
         {
             GettingStudentdata();
             previousSemCourses();
 
+            for (int j = 0; j < courses.Count; j++)
+            {
+                Response.Write(courses[j]);
+            }
         }
+
+        //protected void Button1_Click(object sender, EventArgs e)
+        //{
+        //    GettingStudentdata();
+        //    previousSemCourses();
+        //}
 
         public void previousSemCourses()
         {
@@ -52,7 +69,7 @@ namespace CentennialHub
             conn.Open();
             for (i=1;i<=currentSem;i++) {
                
-                String gettingcourses = "select coursecode from studentrecord where stID='" + Session["id"].ToString() + "' AND (description='unmet' and semester=1)";
+                String gettingcourses = "select coursecode from studentrecord where stID='" + Session["id"].ToString() + "' AND (remarks='unmet' and semester=1)";
                 SqlCommand cmd = new SqlCommand(gettingcourses, conn);
                 SqlDataReader courseRdr = cmd.ExecuteReader();
                 while (courseRdr.Read())
@@ -60,9 +77,9 @@ namespace CentennialHub
                     courses.Add(Convert.ToString(courseRdr["coursecode"]));
                 }
 
-               
+                conn.Close();
             }
-            conn.Close();
+           
         }
 
 
