@@ -16,7 +16,7 @@
         
     </h5>
     <h6> </h6>
-    <asp:LinkButton ID="LinkButton1" runat="server" OnClientClick="GettingStudentData">View/Build Timetable</asp:LinkButton>
+    <asp:LinkButton ID="LinkButton1" runat="server" OnClientClick="GettingStudentData" OnClick="LinkButton1_Click">View/Build Timetable</asp:LinkButton>
     <ul class="studentmenu">
         
            <li><a href="#">View Student Record</a></li>
