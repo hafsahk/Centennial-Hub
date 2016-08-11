@@ -15,6 +15,7 @@ namespace CentennialHub
         String program;
         SqlConnection conn;
         int currentSem, i;
+        String pendingCourses;
         List<String> courses = new List<String>();
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -46,11 +47,11 @@ namespace CentennialHub
         {
             GettingStudentdata();
             previousSemCourses();
-
-            for (int j = 0; j < courses.Count; j++)
-            {
-                Response.Write("\n"+courses[j]);
-            }
+            Response.Write(pendingCourses);
+            //for (int j = 0; j < courses.Count; j++)
+            //{
+            //    Response.Write("\n"+courses[j]);
+            //}
             conn.Close();
         }
 
@@ -62,12 +63,13 @@ namespace CentennialHub
             for (i = 1; i <= currentSem; i++)
             {
 
-                String gettingcourses = "select coursecode from studentrecord where stID='" + Session["id"].ToString() + "' AND (remarks='unmet' and semester=1)";
+                String gettingcourses = "select coursecode from studentrecord where stID='" + Session["id"].ToString() + "' AND (remarks='unmet' and semester=3)";
                 SqlCommand cmd = new SqlCommand(gettingcourses, conn);
                 SqlDataReader courseRdr = cmd.ExecuteReader();
                 while (courseRdr.Read())
                 {
-                    courses.Add(Convert.ToString(courseRdr["coursecode"]));
+                    // courses.Add(Convert.ToString(courseRdr["coursecode"]));
+                  pendingCourses = Convert.ToString(courseRdr["coursecode"]);
                 }
                 courseRdr.Close();
             }
