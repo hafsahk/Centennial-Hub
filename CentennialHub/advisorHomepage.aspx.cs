@@ -13,5 +13,10 @@ namespace CentennialHub
         {
             Label2.Text = "Welcome " + Session["id"];
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
+        }
     }
 }

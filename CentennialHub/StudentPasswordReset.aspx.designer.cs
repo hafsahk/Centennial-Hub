@@ -22,6 +22,15 @@ namespace CentennialHub {
         protected global::System.Web.UI.WebControls.Label label1;
         
         /// <summary>
+        /// btnLogout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnLogout;
+        
+        /// <summary>
         /// currentPass control.
         /// </summary>
         /// <remarks>
@@ -64,7 +73,7 @@ namespace CentennialHub {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-     //   protected global::System.Web.UI.WebControls.Button SaveButton;
+        protected global::System.Web.UI.WebControls.Button SaveButton;
         
         /// <summary>
         /// CancelButton control.
@@ -73,6 +82,6 @@ namespace CentennialHub {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-       // protected global::System.Web.UI.WebControls.Button CancelButton;
+        protected global::System.Web.UI.WebControls.Button CancelButton;
     }
 }

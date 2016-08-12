@@ -21,7 +21,7 @@
                         <h2>Reset Password</h2>
                     </td>
                     <td><a href="UpdateAccountDetails.aspx">Back</a>  &nbsp; &nbsp; | &nbsp; &nbsp;
-            <a href="Default.aspx">Logout</a></td>
+            <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="Logout_Click" /></td>
                 </tr>
             </table>
         </div>

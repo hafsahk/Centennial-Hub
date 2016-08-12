@@ -17,6 +17,7 @@ namespace CentennialHub
         int currentSem, i;
         String pendingCourses;
         List<String> courses = new List<String>();
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -73,6 +74,11 @@ namespace CentennialHub
                 }
                 courseRdr.Close();
             }
+        }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
         }
     }
 }

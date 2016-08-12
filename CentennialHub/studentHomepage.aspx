@@ -7,11 +7,13 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <style>
         h5{
-            width:80%;
+            width:91%;
             text-align:right;
         }
     </style>
     <h5>
+        <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" />&nbsp; &nbsp; &nbsp; &nbsp;
+        
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         
     </h5>
