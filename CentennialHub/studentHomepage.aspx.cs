@@ -48,10 +48,10 @@ namespace CentennialHub
             GettingStudentdata();
             previousSemCourses();
             Response.Write(pendingCourses);
-            //for (int j = 0; j < courses.Count; j++)
-            //{
-            //    Response.Write("\n"+courses[j]);
-            //}
+            for (int j = 0; j < courses.Count; j++)
+            {
+                Response.Write("\n"+courses[j]);
+            }
             conn.Close();
         }
 
@@ -60,20 +60,19 @@ namespace CentennialHub
         {
             conn = new SqlConnection(ConfigurationManager.ConnectionStrings["COMP231-Project"].ConnectionString);
             conn.Open();
-            for (i = 1; i <= currentSem; i++)
-            {
-
-                String gettingcourses = "select coursecode from studentrecord where stID='" + Session["id"].ToString() + "' AND (remarks='unmet' and semester=3)";
+                String gettingcourses = "select coursecode,semester from studentrecord where stID='" + Session["id"].ToString() + "' AND remarks='unmet'";
                 SqlCommand cmd = new SqlCommand(gettingcourses, conn);
                 SqlDataReader courseRdr = cmd.ExecuteReader();
                 while (courseRdr.Read())
                 {
-                    // courses.Add(Convert.ToString(courseRdr["coursecode"]));
-                  pendingCourses = Convert.ToString(courseRdr["coursecode"]);
+                    courses.Add(Convert.ToString(courseRdr["coursecode"]));
+                  //pendingCourses = Convert.ToString(courseRdr["coursecode"]);
                 }
                 courseRdr.Close();
-            }
+            
         }
+
+        
     }
 }
           
