@@ -68,5 +68,9 @@ namespace CentennialHub
         {
             Response.Redirect("studentHomepage.aspx");
         }
+        protected void Logout_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
+        }
     }
 }

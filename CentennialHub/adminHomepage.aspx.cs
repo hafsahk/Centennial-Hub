@@ -13,5 +13,10 @@ namespace CentennialHub
         {
             Label1.Text = "Wellcome " + Session["id"];
         }
+
+        protected void BtnLogout_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
+        }
     }
 }

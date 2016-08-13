@@ -12,6 +12,8 @@
         }
     </style>
     <h5>
+        <asp:Button ID="BtnLogout" runat="server" Text="Logout" OnClick="BtnLogout_Click" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
     </h5>
      <ul class="adminMenu">
