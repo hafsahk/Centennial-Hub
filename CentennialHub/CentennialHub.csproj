@@ -62,6 +62,7 @@
     <Content Include="advisorHomepage.aspx" />
     <Content Include="advisorLogin.aspx" />
     <Content Include="AdvisorPasswordUpdate.aspx" />
+    <Content Include="BuildTimetable.aspx" />
     <Content Include="createAdvisorID.aspx" />
     <Content Include="createStudentID.aspx" />
     <Content Include="images\back.png" />
@@ -123,6 +124,13 @@
     </Compile>
     <Compile Include="AdvisorPasswordUpdate.aspx.designer.cs">
       <DependentUpon>AdvisorPasswordUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuildTimetable.aspx.cs">
+      <DependentUpon>BuildTimetable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuildTimetable.aspx.designer.cs">
+      <DependentUpon>BuildTimetable.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

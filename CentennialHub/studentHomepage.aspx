@@ -5,9 +5,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
-    <style>
+   <style>
         h5{
-            width:91%;
+            width:85%;
             text-align:right;
         }
     </style>
@@ -20,10 +20,9 @@
    <%-- <h6> </h6>
     <asp:LinkButton ID="LinkButton1" runat="server" OnClientClick="GettingStudentData" OnClick="LinkButton1_Click">View/Build Timetable</asp:LinkButton>--%>
     <ul class="studentmenu">
-        <li>
-            <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" /></li>
-        
-           <li><a href="#">View Student Record </a></li>
+    <%--    <li><asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" /></li>
+    --%>       <li><a href="BuildTimetable.aspx"> view/Build Timetable</a></li>
+           <li><a href="#"> View Student Record</a></li>
            <li><a href="UpdateAccountDetails.aspx">Update Information</a></li>
            <li><a href="StudentPasswordReset.aspx">Change Password</a> </li>
            <li><a href="#">Drop Courses</a></li>
