@@ -75,6 +75,11 @@ namespace CentennialHub
             courseRdr.Close();
 
         }
+        // register button functionality
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
 
 
     }

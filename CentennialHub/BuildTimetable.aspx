@@ -11,12 +11,13 @@
         }
     </style>
     <h5>
-        <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" />&nbsp; &nbsp; &nbsp; &nbsp;
-        
+        <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" />&nbsp; &nbsp; &nbsp; &nbsp;   
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-        
     </h5>
  <ul class="studentmenu">
-       <li><asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" /></li>
+       <li><asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" Width="69px" /></li>
+       <li>
+           <asp:Button ID="Button2" runat="server" Text="Register" OnClick="Button2_Click" />
+       </li>
  </ul>
 </asp:Content>
