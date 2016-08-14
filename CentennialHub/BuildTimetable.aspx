@@ -33,9 +33,6 @@
   <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
     
     <br />
-    
-    <br />
-    <asp:Label ID="Label6" runat="server" Text=""></asp:Label>
     <br />
     <asp:Label ID="Label7" runat="server" Text=""></asp:Label>
     </div>
