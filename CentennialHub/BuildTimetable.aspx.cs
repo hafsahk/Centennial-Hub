@@ -26,7 +26,7 @@ namespace CentennialHub
         {
             conn = new SqlConnection(ConfigurationManager.ConnectionStrings["COMP231-Project"].ConnectionString);
             conn.Open();
-            String gettingSemester = "select program,semester from student where stID='" + Session["id"].ToString() + "'";
+            String gettingSemester = "select program, semester from student where stID='" + Session["id"].ToString() + "'";
             SqlCommand cmd = new SqlCommand(gettingSemester, conn);
             SqlDataReader semRdr = cmd.ExecuteReader();
 
@@ -37,8 +37,10 @@ namespace CentennialHub
 
             }
             semRdr.Close();
-            Response.Write(program);
-            Response.Write(currentSem);
+            Label3.Text = program;
+            Label4.Text = currentSem.ToString();
+            //Response.Write(program);
+            //Response.Write(currentSem);
             conn.Close();
         }
 
@@ -46,10 +48,12 @@ namespace CentennialHub
         {
             GettingStudentdata();
             previousSemCourses();
-            Response.Write(pendingCourses);
+            checkPrerequisite();
+            displayProfIDs();
+            //Response.Write(pendingCourses);
             for (int j = 0; j < courses.Count; j++)
             {
-                Response.Write("\n" + courses[j]);
+                Label5.Text = "\n" + courses[j];
             }
             conn.Close();
         }
@@ -57,14 +61,14 @@ namespace CentennialHub
 
         protected void btnLogout_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Login.aspx");
+            Response.Redirect("Default.aspx");
         }
 
         public void previousSemCourses()
         {
             conn = new SqlConnection(ConfigurationManager.ConnectionStrings["COMP231-Project"].ConnectionString);
             conn.Open();
-            String gettingcourses = "select coursecode,semester from studentrecord where stID='" + Session["id"].ToString() + "' AND remarks='unmet'";
+            String gettingcourses = "select studentRecord.StID, courses.courseName, courses.courseCode, studentrecord.semester from studentrecord inner join courses On studentRecord.courseCode = courses.courseCode where studentrecord.stID='" + Session["id"].ToString() + "' AND studentrecord.remarks='unmet'";
             SqlCommand cmd = new SqlCommand(gettingcourses, conn);
             SqlDataReader courseRdr = cmd.ExecuteReader();
             while (courseRdr.Read())
@@ -81,6 +85,35 @@ namespace CentennialHub
 
         }
 
+        public void checkPrerequisite()
+        {
+            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["COMP231-Project"].ConnectionString);
+            conn.Open();
+            String preReq = "select prerequisite from courses Inner join studentrecord On courses.CourseCode = studentrecord.CourseCode where studentrecord.stID='" + Session["id"].ToString() + "' And courses.courseCode = studentrecord.courseCode AND studentrecord.remarks='unmet'";
+            SqlCommand cmd = new SqlCommand(preReq, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Label2.Text = "Pre-requisites required" + "\t" + (Convert.ToString(reader["prerequisite"]));
+                //Label6.Text = "Alternatives" + "\t" + (Convert.ToString(reader["alternatives"]));
+            }
+            reader.Close();
+            conn.Close();
+        }
 
+        public void displayProfIDs()
+        {
+            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["COMP231-Project"].ConnectionString);
+            conn.Open();
+            String preReq = "select faculty.email from courses Inner join studentrecord On courses.CourseCode = studentrecord.CourseCode Inner Join CourseDetails On courses.courseCode = courseDetails.courseCode Inner Join faculty On CourseDetails.facID = faculty.facID where studentrecord.stID='" + Session["id"].ToString() + "' And courses.courseCode = studentrecord.courseCode AND studentrecord.remarks='unmet'";
+            SqlCommand cmd = new SqlCommand(preReq, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Label7.Text = "Please contact the Professor prior selecting this course:" + "\t" + (Convert.ToString(reader["email"]));
+             }
+            reader.Close();
+            conn.Close();
+        }
     }
 }

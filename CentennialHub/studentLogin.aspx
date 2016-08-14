@@ -30,8 +30,10 @@
         </tr>
         <tr>
             <td class="auto-style5">
-                <asp:Button ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" /></td>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
             <td class="auto-style6">
+                &nbsp;
+                <asp:Button ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" Width="56px" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:Button ID="Button2" runat="server" Text="Cancel" />
             </td>
             <td class="auto-style7"></td>

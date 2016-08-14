@@ -12,7 +12,6 @@ namespace CentennialHub
 {
     public partial class UpdateAccountDetails : System.Web.UI.Page
     {
-      //public SqlConnection conn = new SqlConnection("Data Source=PC\\MYSQL_AMNA;Initial Catalog=COMP231-Project;Integrated Security=True");
         public string conn = ConfigurationManager.ConnectionStrings["COMP231-Project"].ConnectionString;
            
         protected void Page_Load(object sender, EventArgs e)
@@ -26,7 +25,7 @@ namespace CentennialHub
               string str;
               con.Open();
               str = "Select stFirstName, stLastName, address, gender, contact, emergencyContact, primaryEmail, secondaryEmail, program, semester from Student where stID='" + Session["id"].ToString() + "'";
-            SqlCommand  com = new SqlCommand(str, con);
+               SqlCommand  com = new SqlCommand(str, con);
               SqlDataReader reader = com.ExecuteReader();
               if (reader.Read())
               {
