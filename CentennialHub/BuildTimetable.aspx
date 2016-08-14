@@ -17,7 +17,7 @@
  <ul class="studentmenu">
        <li><asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" Width="69px" /></li>
        <li>
-           <asp:Button ID="Button2" runat="server" Text="Register" OnClick="Button2_Click" />
+           <asp:Button ID="btnregister" runat="server" Text="Register" OnClick="btnRegister_Click" />
        </li>
  </ul>
 </asp:Content>

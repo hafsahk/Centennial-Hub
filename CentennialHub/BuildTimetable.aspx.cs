@@ -76,7 +76,7 @@ namespace CentennialHub
 
         }
         // register button functionality
-        protected void Button2_Click(object sender, EventArgs e)
+        protected void btnRegister_Click(object sender, EventArgs e)
         {
 
         }
