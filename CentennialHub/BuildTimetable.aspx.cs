@@ -34,11 +34,10 @@ namespace CentennialHub
             {
                 program = Convert.ToString(semRdr["program"]);
                 currentSem = Convert.ToInt16(semRdr["semester"]);//convert to integer
-
             }
             semRdr.Close();
-            Label3.Text = program;
-            Label4.Text = currentSem.ToString();
+            Label3.Text = "Program: " + program;
+            Label4.Text = "Semester: " + currentSem.ToString();
             //Response.Write(program);
             //Response.Write(currentSem);
             conn.Close();
@@ -51,10 +50,16 @@ namespace CentennialHub
             checkPrerequisite();
             displayProfIDs();
             //Response.Write(pendingCourses);
-            for (int j = 0; j < courses.Count; j++)
+            Label5.Text = "Course: ";
+
+            foreach (var item in courses)
             {
-                Label5.Text = "\n" + courses[j];
+                Label5.Text += "\n" + item + "&nbsp";
             }
+            /*for (int j = 0; j < courses.Count; j++)
+            {
+                Label5.Text += "\n" + courses[j] + "  ";
+            }*/
             conn.Close();
         }
 
@@ -94,7 +99,7 @@ namespace CentennialHub
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                Label2.Text = "Pre-requisites required" + "\t" + (Convert.ToString(reader["prerequisite"]));
+                Label2.Text = "Pre-requisites required: " + "\t" + (Convert.ToString(reader["prerequisite"]));
                 //Label6.Text = "Alternatives" + "\t" + (Convert.ToString(reader["alternatives"]));
             }
             reader.Close();
