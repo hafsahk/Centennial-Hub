@@ -31,16 +31,26 @@ namespace CentennialHub
             displayProfIDs();
             Label5.Text = "Course: ";
             Label2.Text = "Perequisites: ";
-            Label7.Text = "Please contact the Professor(s) prior selecting the course(s): ";
+            Label7.Text = "Please contact the Professor(s) prior selecting the course(s) above.";
+            int position = 0;
 
-            foreach (var item in courses)
+
+            foreach (var course in courses)
             {
-                Label5.Text += "\n" + item + "&nbsp";
+                Label5.Text += "\n" + course + "&nbsp";
             }
-             foreach (var var in preRequisites)
+
+            foreach (var pre in preRequisites)
             {
-                Label2.Text += "\n" + var + "&nbsp";
+                //Label2.Text += "\n" + pre + "&nbsp";
+                if (!pre.Equals(""))
+                {
+                    Label2.Text += "<br/>&nbsp&nbsp&nbsp" + "To take '" + courses.ElementAt(position) + "' you must have completed: "
+                        + preRequisites.ElementAt(position);// + ". The professor(s) can be reached at: " + email.ElementAt(position-1);
+                }
+                position++;
             }
+
              foreach (var item in email)
              {
                  Label7.Text += "\n" + item + "&nbsp";
