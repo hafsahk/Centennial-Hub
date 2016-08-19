@@ -129,7 +129,10 @@
     </Compile>
     <Compile Include="advisorViewStudent.aspx.cs">
       <DependentUpon>advisorViewStudent.aspx</DependentUpon>
+<<<<<<< HEAD
       <SubType>ASPXCodeBehind</SubType>
+=======
+>>>>>>> origin/master
     </Compile>
     <Compile Include="advisorViewStudent.aspx.designer.cs">
       <DependentUpon>advisorViewStudent.aspx</DependentUpon>
@@ -196,7 +199,10 @@
     </Compile>
     <Compile Include="StudentViewAccountDetails.aspx.cs">
       <DependentUpon>StudentViewAccountDetails.aspx</DependentUpon>
+<<<<<<< HEAD
       <SubType>ASPXCodeBehind</SubType>
+=======
+>>>>>>> origin/master
     </Compile>
     <Compile Include="StudentViewAccountDetails.aspx.designer.cs">
       <DependentUpon>StudentViewAccountDetails.aspx</DependentUpon>
