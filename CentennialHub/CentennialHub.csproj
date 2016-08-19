@@ -136,6 +136,7 @@
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="CourseTimes.cs" />
     <Compile Include="createAdvisorID.aspx.cs">
       <DependentUpon>createAdvisorID.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

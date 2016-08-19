@@ -14,6 +14,8 @@ namespace CentennialHub
         String program;
         SqlConnection conn;
         int currentSem, i;
+        List<CourseTimes> courseList = new List<CourseTimes>();
+        List<CourseTimes> orderedList = new List<CourseTimes>();
         List<String> courses = new List<String>();
         List<String> preRequisites = new List<String>();
         List<String> email = new List<String>();
@@ -25,6 +27,8 @@ namespace CentennialHub
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            courseList.Clear();
+            orderedList.Clear();
             GettingStudentdata();
             previousSemCourses();
             checkPrerequisite();
@@ -88,6 +92,52 @@ namespace CentennialHub
             Label4.Text = "Semester: " + currentSem.ToString();
             conn.Close();
         }
+
+        public void getAllCourses()
+        {
+            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["COMP231-Project"].ConnectionString);
+            conn.Open();
+            String gettingCourses = "select * from tt";// where stID='" + Session["id"].ToString() + "'";
+            SqlCommand cmd = new SqlCommand(gettingCourses, conn);
+            SqlDataReader semRdr = cmd.ExecuteReader();
+            
+            while (semRdr.Read())
+            {
+                if(Convert.ToString(semRdr["Monday"]) != "")
+                {
+                    courseList.Add(new CourseTimes(Convert.ToString(semRdr["start_time"]), Convert.ToString(semRdr["end_time"]), Convert.ToString(semRdr["Monday"]), Days.Monday));
+                }
+                if (Convert.ToString(semRdr["Tuesday"]) != "")
+                {
+                    courseList.Add(new CourseTimes(Convert.ToString(semRdr["start_time"]), Convert.ToString(semRdr["end_time"]), Convert.ToString(semRdr["Tuesday"]), Days.Tuesday));
+                }
+                if (Convert.ToString(semRdr["Wednesday"]) != "")
+                {
+                    courseList.Add(new CourseTimes(Convert.ToString(semRdr["start_time"]), Convert.ToString(semRdr["end_time"]), Convert.ToString(semRdr["Wednesday"]), Days.Wednesday));
+                }
+                if (Convert.ToString(semRdr["Thursday"]) != "")
+                {
+                    courseList.Add(new CourseTimes(Convert.ToString(semRdr["start_time"]), Convert.ToString(semRdr["end_time"]), Convert.ToString(semRdr["Thursday"]), Days.Thursday));
+                }
+                if (Convert.ToString(semRdr["Friday"]) != "")
+                {
+                    courseList.Add(new CourseTimes(Convert.ToString(semRdr["start_time"]), Convert.ToString(semRdr["end_time"]), Convert.ToString(semRdr["Friday"]), Days.Friday));
+                }                
+            }
+
+            var orderedCourse = from course in courseList
+                                orderby course.Day
+                                select new CourseTimes(course.StartTime, course.EndTime, course.Course, course.Day);
+
+            Label7.Text = "";
+
+            foreach (var item in orderedCourse)
+            {
+                orderedList.Add(item);
+            }
+
+        }
+
         public void previousSemCourses()
         {
             conn = new SqlConnection(ConfigurationManager.ConnectionStrings["COMP231-Project"].ConnectionString);
@@ -95,6 +145,7 @@ namespace CentennialHub
             String gettingcourses = "select studentRecord.StID, courses.courseName, courses.courseCode, studentrecord.semester from studentrecord inner join courses On studentRecord.courseCode = courses.courseCode where studentrecord.stID='" + Session["id"].ToString() + "' AND studentrecord.remarks='unmet'";
             SqlCommand cmd = new SqlCommand(gettingcourses, conn);
             SqlDataReader courseRdr = cmd.ExecuteReader();
+
             while (courseRdr.Read())
             {
                 courses.Add(Convert.ToString(courseRdr["coursecode"]));
@@ -107,7 +158,14 @@ namespace CentennialHub
         // register button functionality
         protected void btnRegister_Click(object sender, EventArgs e)
         {
+            getAllCourses();
 
+            Label7.Text = "";
+
+            foreach (var item in orderedList)
+            {
+                Label7.Text += item.ToString() + "<br/>";
+            }
         }
 
         public void checkPrerequisite()
