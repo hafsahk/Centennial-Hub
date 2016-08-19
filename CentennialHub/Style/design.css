@@ -1,0 +1,329 @@
+﻿/*body {
+background-image:url(../images/centennial.jpeg);
+background-size:contain;
+    background-repeat:no-repeat;
+}*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.2em;
+    width:100%;
+    border:1px black;
+    margin:0;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+nav {
+    background-color:  #d4df38;
+    padding: 0;
+    height:120px;
+    border-bottom: 2px solid gray;
+    width:100%;
+    border:1px black;
+}
+    nav ul {
+        font-family: 'Open Sans', sans-serif;
+        text-align: right;
+        font-weight: bold;
+        overflow: auto;
+        margin-right: 6%;
+        color: white;
+        margin-left: 45%;
+        width: 40%;
+       
+    }
+        nav ul li {
+            padding: 15px;
+            display: inline-block;
+            margin-right: 2.5%;
+            text-align: center;
+}
+
+    nav ul li a {
+                font-family: Calibri;
+                font-size: 16px;
+                color: darkblue;
+                text-align: center;
+                text-decoration:underline;
+                font-weight:600;
+          
+ }
+
+     nav ul li a:hover {
+                    text-decoration: none;
+                    color: darkblue;
+ }
+
+.active, .active:hover {
+    color: darkblue;
+    font-weight: 800;
+}
+
+    .active a:hover {
+        cursor: default;
+        color: darkblue;
+    }
+nav #logo{
+      margin-left:18%;   
+      position:absolute;
+      top:0;
+  }
+nav h2 {
+    font-size: 34px;
+    margin-left: 14.5%;
+    color: #484747;
+    width:300px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.content{
+    width:100px;
+    border: 1px ;
+    border-radius:5px 5px 5px 5px;
+    float:left;
+    margin-top:8px;
+    margin-bottom: 8px;
+    min-height:400px;
+    background-color:antiquewhite;
+}
+.options {
+width:100%;
+margin:0 0 10px;
+padding:0;
+height:40px;
+}
+.navigation_Option1{
+    border-left:0;
+    border-radius:5px 0 0 5px;
+}
+.navigationItem {
+float:left;
+border-right: 1px solid;
+border-left: 1px solid;
+height:40px;
+}
+.options ul {    height: 43px;
+}
+.options ul li{
+    float:left;
+    /*display:block;*/
+    display:inline-block;
+    list-style:none;
+    border-right:1px solid;
+    border-left: 1px solid;
+    margin-left : 50%;
+}
+.options ul li.navigation_Option1:hover{
+    border-radius:5px 0 0 5px;
+}
+.options ul li a
+{
+    font-size: 14px;
+    font-weight:bold;
+    line-height:40px;
+    padding:8px 20px;
+}
+.options ul li:hover{
+    border-right: 1px solid;
+}
+footer{
+    height:40px;
+    /*border-radius:5px 5px 5px 5px;*/
+    text-align:center;
+    background: #474748;
+}
+footer h4{
+    font-size:14px;
+    color:white;
+    font-family:'Lucida Calligraphy';    
+    padding-top:10px;
+    /*text-align:center;*/
+}
+.clear {
+clear:both;
+}
+
+/* -----------------Styles for UpdateAccountDetails page----------------------*/
+ #wholeForm h2 {
+            width:300px;
+            padding:5px;
+        }
+        #wholeForm a{
+            text-decoration:none;
+            color:#2b2929;
+        }
+        #wholeForm a:hover{
+            color:black;
+            text-decoration:underline;
+        }
+        #wholeForm a:active{
+            color:blue;
+        }
+        #title{
+            border-bottom:4px #cde058 double;
+        }
+        #wholeForm {
+            padding: 5px;
+            width: 99%;
+            height:auto;
+            display: inline-block;
+        }
+        #personalInfo {
+            padding: 5px;
+            float: left;
+            margin:0;
+            height: auto;
+            width: 99.5%;
+            line-height:150%;
+            border-bottom:1px solid #808080;
+        }
+
+        #txtBoxesPersonalInfo {
+            left: 20%;
+            position: absolute;
+            float: left;
+            padding: 2px;
+            width: 20%;
+            height: auto;
+            line-height:150%;
+        }
+        #wholeForm h4{
+            padding:5px;
+            border-bottom: 1px solid #808080;
+        }
+        #ContactInfo{
+            padding-left: 5px;
+            float: left;
+            margin:0;
+            height: auto;
+            width: 99.5%;
+            line-height:150%;
+            padding-bottom:15px;
+            border-bottom:1px solid #808080;
+        }
+        #txtBoxesContactInfo{
+            left: 20%;
+            position: absolute;
+            float: left;
+            padding: 2px;
+            width: 20%;
+            height: auto;
+            line-height:150%;
+        }
+        #programInfo{
+            padding-left: 5px;
+            float: left;
+            margin:0;
+            height: auto;
+            line-height:150%;
+            width: 99.5%;
+            padding-bottom:15px;
+            border-bottom:1px solid #808080;
+        }
+        #txtBoxesProgram{
+            left: 20%;
+            position: absolute;
+            float: left;
+            padding: 2px;
+            width: 20%;
+            height: auto;
+            line-height:150%;
+        }
+        #passwordChange p{
+            color:red;
+            text-decoration:underline;
+        }
+       #passwordChange a{
+           color:red;
+       }
+        #passwordChange{
+            padding-left: 5px;
+            float: left;
+            margin:0;
+            height: auto;
+            line-height:150%;
+            width: 99.5%;
+            padding-bottom:15px;
+            border-bottom:1px solid #808080;
+        }
+        #buttonsSaveCancel{
+             margin-top:1%;
+            position: absolute;
+            float: left;
+            padding: 2px;
+            width: 99%;
+            height: auto;
+            line-height:150%;
+            background-color:#eaeaea;
+            text-align:right;
+        }
+        table{
+}
+        td{
+            margin-left:40%;
+        }  
+        #back{
+            width:30px;
+            height:30px;
+        }
+
+        /*--------------------------------Reset Password -------------------------------------*/
+          #Passwordreset p {
+                color: red;
+                padding-left:20px;
+            }
+
+            #Passwordreset {
+                padding: 5px;
+                float: left;
+                margin: 0;
+                height: auto;
+                padding-bottom:5px;
+                width: 99.5%;
+                line-height: 150%;
+                border-bottom: 1px solid #808080;
+            }
+            #Passwordreset label{
+                margin-left:10px;
+            }
+            #txtBoxesPassword {
+               margin-top:4%;
+                left: 21%;
+                position: absolute;
+                float: left;
+                padding: 2px;
+                width: 24%;
+                height: 122px;
+                line-height: 150%;
+    top: 317px;
+    right: 719px;
+}
+            #buttonsSaveCancl{
+            margin-top:1%;
+            position: absolute;
+            float: left;
+            padding: 2px;
+            width: 99%;
+            height: auto;
+            line-height:150%;
+            background-color:#eaeaea;
+            text-align:right;
+        }
+            #sideNotes{
+               top:49.8%;
+                background-color:#f1ffcd;
+                border:3px solid #f1ffcd;
+                left: 49%;
+                position: absolute;
+                float: left;
+                width: 50%;
+                line-height: 150%;
+            }
+            #sideNotes p{
+                color: red;
+                padding-left:20px;
+            }
+
+
