@@ -47,7 +47,7 @@ namespace CentennialHub
 
             foreach (var pre in preRequisites)
             {
-                //Label2.Text += "\n" + pre + "&nbsp";
+                
                 if (!pre.Equals(""))
                 {
                     Label2.Text += "<br/>&nbsp&nbsp&nbsp" + "To take '" + courses.ElementAt(position) + "' you must have completed: "
@@ -62,10 +62,7 @@ namespace CentennialHub
              }
 
 
-            /*for (int j = 0; j < courses.Count; j++)
-            {
-                Label5.Text += "\n" + courses[j] + "  ";
-            }*/
+          
             conn.Close();
         }
 
