@@ -19,6 +19,7 @@ namespace CentennialHub
         List<String> courses = new List<String>();
         List<String> preRequisites = new List<String>();
         List<String> email = new List<String>();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             Label1.Text = "Welcome " + Session["id"];
@@ -125,6 +126,9 @@ namespace CentennialHub
                 }                
             }
 
+            semRdr.Close();
+            conn.Close();
+
             var orderedCourse = from course in courseList
                                 orderby course.Day
                                 select new CourseTimes(course.StartTime, course.EndTime, course.Course, course.Day);
@@ -135,6 +139,8 @@ namespace CentennialHub
             {
                 orderedList.Add(item);
             }
+
+            
 
         }
 
@@ -159,12 +165,18 @@ namespace CentennialHub
         protected void btnRegister_Click(object sender, EventArgs e)
         {
             getAllCourses();
-
+            previousSemCourses();
             Label7.Text = "";
 
-            foreach (var item in orderedList)
+            foreach (var avaliablecourse in orderedList)
             {
-                Label7.Text += item.ToString() + "<br/>";
+                foreach (var neededCourse in courses)
+                {
+                    if (avaliablecourse.Course.Equals(neededCourse)) //neededCourse.Contains(avaliablecourse.Course))//avaliablecourse.Course.Contains(neededCourse))
+                    {
+                        Label7.Text += avaliablecourse.ToString() + "<br/>";
+                    }
+                }                
             }
         }
 

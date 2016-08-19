@@ -62,6 +62,7 @@
     <Content Include="advisorHomepage.aspx" />
     <Content Include="advisorLogin.aspx" />
     <Content Include="AdvisorPasswordUpdate.aspx" />
+    <Content Include="advisorViewStudent.aspx" />
     <Content Include="BuildTimetable.aspx" />
     <Content Include="createAdvisorID.aspx" />
     <Content Include="createStudentID.aspx" />
@@ -86,6 +87,7 @@
     <Content Include="Default.aspx" />
     <Content Include="form1.aspx" />
     <Content Include="studentHomepage.aspx" />
+    <Content Include="StudentViewAccountDetails.aspx" />
     <Content Include="Style\design.css" />
     <Content Include="UpdateAccountDetails.aspx" />
     <Content Include="Web.config">
@@ -124,6 +126,13 @@
     </Compile>
     <Compile Include="AdvisorPasswordUpdate.aspx.designer.cs">
       <DependentUpon>AdvisorPasswordUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="advisorViewStudent.aspx.cs">
+      <DependentUpon>advisorViewStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="advisorViewStudent.aspx.designer.cs">
+      <DependentUpon>advisorViewStudent.aspx</DependentUpon>
     </Compile>
     <Compile Include="BuildTimetable.aspx.cs">
       <DependentUpon>BuildTimetable.aspx</DependentUpon>
@@ -184,6 +193,13 @@
     </Compile>
     <Compile Include="studentLogin.aspx.designer.cs">
       <DependentUpon>studentLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentViewAccountDetails.aspx.cs">
+      <DependentUpon>StudentViewAccountDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentViewAccountDetails.aspx.designer.cs">
+      <DependentUpon>StudentViewAccountDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="UpdateAccountDetails.aspx.cs">
       <DependentUpon>UpdateAccountDetails.aspx</DependentUpon>
