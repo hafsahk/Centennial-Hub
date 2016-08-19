@@ -152,13 +152,12 @@ namespace CentennialHub
             while (courseRdr.Read())
             {
                 courses.Add(Convert.ToString(courseRdr["coursecode"]));
-                //pendingCourses = Convert.ToString(courseRdr["coursecode"]);
-               
+                
             }
             courseRdr.Close();
 
         }
-        // register button functionality
+      
         protected void btnRegister_Click(object sender, EventArgs e)
         {
             getAllCourses();

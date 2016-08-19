@@ -19,9 +19,7 @@ namespace CentennialHub
         {
             if (!IsPostBack)
             {
-               // lbl1.Text = "Welcome " + Session["id"];
-
-                // Validate initially to force asterisks
+               
                 SqlConnection con = new SqlConnection(conn);
                 string str;
                 con.Open();

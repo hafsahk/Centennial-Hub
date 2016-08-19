@@ -14,7 +14,7 @@ namespace CentennialHub
     {
         public string conn = ConfigurationManager.ConnectionStrings["COMP231-Project"].ConnectionString;
 
-        //string strConnString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+       
         string str = null;
         SqlCommand com;
         byte up;
